@@ -2,3 +2,18 @@
 @import "font";
 @import "var";
 
+h1 {
+  font-family: denk one;
+  color: #34435E;
+  text-align: right;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+
