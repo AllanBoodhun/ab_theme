@@ -1,12 +1,17 @@
 // Chargement des dépendances
 @import "font";
 @import "var";
+@import "navbar";
+@import "home";
 
-h1 {
-  font-family: denk one;
-  color: #34435E;
-  text-align: right;
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background: #E9EDED;
+  font-family: "Roboto", sans-serif;
 }
+
 
 .cards {
   display: flex;

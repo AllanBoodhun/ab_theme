@@ -7,15 +7,16 @@
 <div class="wraper">
 
   <div class="homepage">
-
-    <div class="slider-home">
-      slider-photos de la course
-    </div>
-    <div class="presentation-course">
-      <h1>La Course </h1>
-      <p> <?php the_field('description'); ?> </p>
-    </div>
-
+    <div class="home">
+      <div class="slider-home">
+        <!-- idéalement un slider photos -->
+        <img src="<?php the_field('img_accueil'); ?>" alt="">
+      </div>
+      <div class="presentation-course">
+        <h1>La Course </h1>
+        <p> <?php the_field('description'); ?> </p>
+      </div>
+      </div>
     <div class="parcours">
       <div class="checkpoints">
         <div class="checkpoint1">checkpoint 1</div>
@@ -24,7 +25,9 @@
         <div class="checkpoint4">checkpoint 4</div>
       </div>
       <div class="carte">
-        carte du parcours
+        carte parcours
+        <img src="<?php the_field('parcours'); ?>" alt="">
+
       </div>
     </div>
   </div>
