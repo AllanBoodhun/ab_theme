@@ -1,11 +1,26 @@
-h1 {
-  font-family: denk one;
-  color: #34435E;
-  text-align: right;
+.wraper {
+  margin: 12px;
 }
 
-.slider-home {
+.home {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
 
-  width: 50vh;
-  }
+.slider-home img {
+  // width: 50vw; déclaré dans l'html, ici ça voulait pas ?!?
+}
 
+.presentation-course {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.presentation-course h1 {
+  padding-bottom: 22px;
+}

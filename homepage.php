@@ -10,10 +10,10 @@
     <div class="home">
       <div class="slider-home">
         <!-- idéalement un slider photos -->
-        <img src="<?php the_field('img_accueil'); ?>" alt="">
+        <img src="<?php the_field('img_accueil'); ?>" alt="" style="width: 50vw">
       </div>
       <div class="presentation-course">
-        <h1>La Course </h1>
+        <h1><?php the_field('titre'); ?></h1>
         <p> <?php the_field('description'); ?> </p>
       </div>
       </div>
