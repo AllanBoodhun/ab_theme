@@ -23,6 +23,7 @@ function style(){
 
  function watch(){
    gulp.watch('./assets/scss/**/*.scss',style);
+
  }
 
 
