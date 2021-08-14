@@ -5,7 +5,11 @@
  */
  
 get_header();
+?>
 
-the_field('titre');
+<h1> <?php the_field("titre"); ?> </h1>
 
+<div class="btn">hello</div>
+<?php 
 get_footer();
+?>
