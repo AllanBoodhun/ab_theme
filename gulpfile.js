@@ -22,9 +22,6 @@ function style(){
 }
 
  function watch(){
-   browserSync.init({
-    proxy: 'http://trail-chantenay.local'
-   });
    gulp.watch('./assets/scss/**/*.scss',style);
  }
 
