@@ -2,7 +2,6 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-<<<<<<< HEAD
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -83,25 +82,5 @@ html {
   align-items: center;
 }
 /*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZvbnQuc2NzcyIsIm5hdmJhci5zY3NzIiwiaG9tZS5zY3NzIiwic3R5bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQTtFQUNJOzs7QUNISjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7O0FBR0Y7QUFBQTtBQUFBO0VBR0U7RUFDQTtFQUNBO0VBQ0E7OztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBRUE7OztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7QUFHRjtFQUNFOzs7QUFJSjtFQUNFO0lBQ0U7OztBQ3ZESjtFQUNFO0VBQ0E7RUFDQTs7O0FBR0Y7RUFFRTs7O0FDRkY7QUFBQTtFQUVFO0VBQ0E7RUFDQTtFQUNBOzs7QUFJRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQSIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
-=======
-h1 {
-  color: red;
-}
-
-.btn {
-  background-color: #37373b;
-  width: min-content;
-  font-size: 30px;
-  color: white;
-  border-radius: 9px;
-  padding: 10px 20px;
-}
-
-.btn:hover {
-  color: blue;
-  background-color: #cbcbff;
-}
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZvbnQuc2NzcyIsInN0eWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSTs7O0FDR0o7RUFDSTs7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7OztBQUdKO0VBQ0k7RUFDQSIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
->>>>>>> aac2e2567b995f3494b154f4dc7bd302580c6c04
 
 /*# sourceMappingURL=style.css.map */

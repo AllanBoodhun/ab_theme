@@ -1,6 +1,7 @@
 <!-- /**
  * Template Name: Homepage
  * 
+<<<<<<< HEAD
  */ -->
 
 <?php get_header(); ?>
@@ -60,3 +61,18 @@
 
 
 <?php get_footer(); ?>
+=======
+ */
+ 
+get_header();
+?>
+
+
+<h1> <?php the_field("titre"); ?> </h1>
+
+
+<div class="btn">hello all</div>
+<?php 
+get_footer();
+?>
+>>>>>>> aac2e2567b995f3494b154f4dc7bd302580c6c04

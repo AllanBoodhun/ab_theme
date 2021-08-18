@@ -1,0 +1,24 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: red;
+}
+
+.btn {
+  background-color: #37373b;
+  width: min-content;
+  font-size: 30px;
+  color: white;
+  border-radius: 9px;
+  padding: 10px 20px;
+}
+
+.btn:hover {
+  color: blue;
+  background-color: #cbcbff;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZvbnQuc2NzcyIsInN0eWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSTs7O0FDR0o7RUFDSTs7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7OztBQUdKO0VBQ0k7RUFDQSIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
+
+/*# sourceMappingURL=style.css.map */

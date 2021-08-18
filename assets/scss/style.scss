@@ -38,3 +38,20 @@ h1 {
   align-items: center;
 }
 
+h1{
+    color:red;
+}
+
+.btn{
+    background-color: rgb(55, 55, 59);
+    width: min-content;
+    font-size: 30px;
+    color: white;
+    border-radius: 9px;
+    padding: 10px 20px;
+}
+
+.btn:hover{
+    color:blue;
+    background-color: rgb(203, 203, 255);
+}
