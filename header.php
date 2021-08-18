@@ -11,7 +11,7 @@
 
   <body>
 
-    <nav class="navbar">
+    <div class="navbar">
       <div class="logo">
         <h1>LOGO</h1>
       </div>
@@ -22,4 +22,4 @@
         <li><a href="#!">Galerie Photos</a></li>
         <li><a href="#!">Le MSC</a></li>
       </ul>
-    </nav>
+    </div>

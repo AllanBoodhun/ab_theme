@@ -1,17 +1,21 @@
 .navbar {
+  flex-direction: row;
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 720px;
   margin: 0 auto;
   height: 20vh;
-  }
+}
+
+.logo h1 {
+  color: red;
+}
 
 .menu {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-
   list-style: none;
   }
 
