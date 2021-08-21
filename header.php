@@ -1,19 +1,19 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/477a276a77.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Denk+One&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
-    <?php wp_head() ?>
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/477a276a77.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+  <section id="site-trail-chantenay">
 
     <div class="navbar">
       <div class="logo">
-        <h1>LOGO</h1>
+        <img src="<?php echo $GLOBALS['logo']?>" alt="">
       </div>
       <ul class="menu">
         <li><a href="#!">Inscription</a></li>

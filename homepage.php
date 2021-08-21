@@ -1,8 +1,13 @@
 <!-- /**
  * Template Name: Homepage
  * 
-<<<<<<< HEAD
  */ -->
+<?php 
+$GLOBALS['logo'] = get_field('logo');
+
+
+?>
+
 
 <?php get_header(); ?>
 <div class="wraper">
@@ -11,7 +16,7 @@
     <div class="home">
       <div class="slider-home">
         <!-- idéalement un slider photos -->
-        <img src="<?php the_field('img_accueil'); ?>" alt="" style="width: 50vw">
+        <img src="<?php the_field('img_accueil'); ?>" alt="">
       </div>
       <div class="presentation-course">
         <h1><?php the_field('titre'); ?></h1>
@@ -61,18 +66,3 @@
 
 
 <?php get_footer(); ?>
-=======
- */
- 
-get_header();
-?>
-
-
-<h1> <?php the_field("titre"); ?> </h1>
-
-
-<div class="btn">hello all</div>
-<?php 
-get_footer();
-?>
->>>>>>> aac2e2567b995f3494b154f4dc7bd302580c6c04

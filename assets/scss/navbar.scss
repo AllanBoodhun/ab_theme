@@ -3,14 +3,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 720px;
+  max-width: 1300px;
   margin: 0 auto;
-  height: 20vh;
+  height: 90px;
+  .logo img{
+    height: 100%;
+  }
 }
 
-.logo h1 {
-  color: red;
-}
 
 .menu {
   display: flex;
@@ -26,8 +26,7 @@
   text-align: center;
 
   a {
-    font-size: 22px;
-    font-family: 'Denk One', sans-serif;
+    font-size: 1rem;
     color: #34435E;
     text-decoration: none;
     transition: all 0.45s;
@@ -39,7 +38,7 @@
    }
 
   &:hover a {
-    color: #d94f5c;
+    color: #4f7bd9;
   }
 
   &:not(:last-child) {

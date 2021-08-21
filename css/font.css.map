@@ -1,1 +1,1 @@
-{"version":3,"sources":["font.scss"],"names":[],"mappings":"AAEA;EACI","file":"font.css","sourcesContent":["\n\n*{\n    font-family: Arial, Helvetica, sans-serif;\n}\n"]}
+{"version":3,"sources":["font.scss"],"names":[],"mappings":"AACQ;AACA;AAER;EACI","file":"font.css","sourcesContent":["// fonts\n@import url('https://fonts.googleapis.com/css2?family=Denk+One&family=Roboto:wght@300;500&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&display=swap');\n\n#site-trail-chantenay{\n    font-family: 'asap';\n}"]}

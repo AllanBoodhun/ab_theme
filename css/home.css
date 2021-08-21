@@ -1,12 +1,29 @@
-h1 {
-  font-family: denk one;
-  color: #34435E;
-  text-align: right;
+.home {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: stretch;
 }
 
-.slider-home {
-  width: 50vh;
+.slider-home img {
+  width: 50vw;
 }
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhvbWUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTs7O0FBR0Y7RUFFRSIsImZpbGUiOiJob21lLmNzcyJ9 */
+
+.presentation-course {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.presentation-course h1 {
+  padding-bottom: 22px;
+}
+
+.carte img {
+  width: 100px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhvbWUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7OztBQUdGO0VBQ0U7OztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7OztBQUdGO0VBQ0U7OztBQUdGO0VBQ0UiLCJmaWxlIjoiaG9tZS5jc3MifQ== */
 
 /*# sourceMappingURL=home.css.map */

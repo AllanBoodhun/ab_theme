@@ -1,6 +1,8 @@
-* {
-  font-family: Arial, Helvetica, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Denk+One&family=Roboto:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&display=swap");
+#site-trail-chantenay {
+  font-family: "asap";
 }
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZvbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQTtFQUNJIiwiZmlsZSI6ImZvbnQuY3NzIn0= */
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZvbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDUTtBQUNBO0FBRVI7RUFDSSIsImZpbGUiOiJmb250LmNzcyJ9 */
 
 /*# sourceMappingURL=font.css.map */

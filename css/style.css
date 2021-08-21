@@ -1,24 +1,20 @@
-* {
-  font-family: Arial, Helvetica, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Denk+One&family=Roboto:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&display=swap");
+#site-trail-chantenay {
+  font-family: "asap";
 }
 
-<<<<<<< HEAD
 .navbar {
+  flex-direction: row;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 720px;
+  max-width: 1300px;
   margin: 0 auto;
-  height: 20vh;
+  height: 90px;
 }
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-  padding: 0;
-  margin: 0;
-  letter-spacing: 1.1px;
+.navbar .logo img {
+  height: 100%;
 }
 
 .menu {
@@ -35,7 +31,7 @@
   text-align: center;
 }
 .menu li a {
-  font-size: 22px;
+  font-size: 1rem;
   color: #34435E;
   text-decoration: none;
   transition: all 0.45s;
@@ -45,7 +41,7 @@
   animation: line 1s;
 }
 .menu li:hover a {
-  color: #d94f5c;
+  color: #4f7bd9;
 }
 .menu li:not(:last-child) {
   margin-right: 30px;
@@ -56,22 +52,37 @@
     background-position-x: 390px;
   }
 }
+.home {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+
+.slider-home img {
+  width: 50vw;
+}
+
+.presentation-course {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.presentation-course h1 {
+  padding-bottom: 22px;
+}
+
+.carte img {
+  width: 100px;
+}
+
 h1 {
-  font-family: denk one;
+  font-size: 22px;
   color: #34435E;
   text-align: right;
-}
-
-.slider-home {
-  width: 50vh;
-}
-
-body,
-html {
-  width: 100%;
-  height: 100%;
-  background: #E9EDED;
-  font-family: "Roboto", sans-serif;
 }
 
 .cards {
@@ -81,11 +92,6 @@ html {
   justify-content: space-around;
   align-content: center;
   align-items: center;
-}
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZvbnQuc2NzcyIsIm5hdmJhci5zY3NzIiwiaG9tZS5zY3NzIiwic3R5bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQTtFQUNJOzs7QUNISjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7O0FBR0Y7QUFBQTtBQUFBO0VBR0U7RUFDQTtFQUNBO0VBQ0E7OztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBRUE7OztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7QUFHRjtFQUNFOzs7QUFJSjtFQUNFO0lBQ0U7OztBQ3ZESjtFQUNFO0VBQ0E7RUFDQTs7O0FBR0Y7RUFFRTs7O0FDRkY7QUFBQTtFQUVFO0VBQ0E7RUFDQTtFQUNBOzs7QUFJRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQSIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
-=======
-h1 {
-  color: red;
 }
 
 .btn {
@@ -101,7 +107,6 @@ h1 {
   color: blue;
   background-color: #cbcbff;
 }
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZvbnQuc2NzcyIsInN0eWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSTs7O0FDR0o7RUFDSTs7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7OztBQUdKO0VBQ0k7RUFDQSIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
->>>>>>> aac2e2567b995f3494b154f4dc7bd302580c6c04
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZvbnQuc2NzcyIsIm5hdmJhci5zY3NzIiwiaG9tZS5zY3NzIiwic3R5bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDUTtBQUNBO0FBRVI7RUFDSTs7O0FDTEo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFDQTtFQUNFOzs7QUFLSjtFQUNFO0VBQ0E7RUFDQTtFQUNBOzs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUdGO0VBQ0U7O0FBR0Y7RUFDRTs7O0FBSUo7RUFDRTtJQUNFOzs7QUNsREo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBOzs7QUFHRjtFQUNFOzs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBOzs7QUFHRjtFQUNFOzs7QUFHRjtFQUNFOzs7QUNqQkY7RUFDRTtFQUNBO0VBQ0E7OztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOzs7QUFJRjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7O0FBR0o7RUFDSTtFQUNBIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */
 
 /*# sourceMappingURL=style.css.map */
