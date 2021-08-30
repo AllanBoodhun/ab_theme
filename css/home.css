@@ -1,14 +1,16 @@
 #site-trail-chantenay {
   background-color: #E5E5E5;
   color: #193038;
+  margin: 0;
+  font-family: "asap";
 }
 
-.home {
+.banner {
   display: flex;
   flex-direction: row;
   align-content: center;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: center;
 }
 
 .slider-home {
@@ -28,18 +30,23 @@
   margin-left: 20px;
   width: 200px;
 }
-.presentation-course img {
-  width: 100%;
+.presentation-course h1 {
+  color: #264653;
+  width: fit-content;
 }
-@media (max-width: 400px) {
-  .presentation-course {
-    width: 100px;
-  }
+.presentation-course p {
+  text-align: justify;
+  margin-right: 20px;
+}
+
+.underline {
+  padding-right: 0.5em;
+  box-shadow: inset 0 -0.55em 0 #E9C46A;
 }
 
 .carte img {
   width: 100px;
 }
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhvbWUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJO0VBQ0E7OztBQUdKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7O0FBR0Y7RUFDRTs7QUFDQTtFQUNBOztBQUVBO0VBTEY7SUFNSTs7OztBQUlKO0VBQ0U7RUFDQTtFQUNBOztBQUNBO0VBQ0U7O0FBRUY7RUFQRjtJQVFJOzs7O0FBNkJKO0VBQ0UiLCJmaWxlIjoiaG9tZS5jc3MifQ== */
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhvbWUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBOzs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7OztBQUdGO0VBQ0U7O0FBQ0E7RUFDQTs7QUFFQTtFQUxGO0lBTUk7Ozs7QUFJSjtFQUNFO0VBQ0E7RUFDQTs7QUFLQTtFQUNFO0VBQ0E7O0FBWUY7RUFDRTtFQUNBOzs7QUFNSjtFQUNFO0VBQ0E7OztBQUlGO0VBQ0UiLCJmaWxlIjoiaG9tZS5jc3MifQ== */
 
 /*# sourceMappingURL=home.css.map */

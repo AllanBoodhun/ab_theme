@@ -19,8 +19,9 @@ $GLOBALS['logo'] = get_field('logo');
         <img src="<?php the_field('img_accueil'); ?>" alt="">
       </div>
       <div class="presentation-course">
-        <h1><?php the_field('titre'); ?></h1>
+        <h1 class="underline"><?php the_field('titre'); ?></h1>
         <p> <?php the_field('description'); ?> </p>
+        <button>Je m'inscris</button>
       </div>
     </div>
     <div class="parcours">

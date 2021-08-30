@@ -1,14 +1,16 @@
 #site-trail-chantenay{
-    background-color: #E5E5E5;
-    color: #193038;
+  background-color: #E5E5E5;
+  color: #193038;
+  margin: 0;
+  font-family: 'asap';
 }
 
-.home {
+.banner {
   display: flex;
   flex-direction: row;
   align-content: center;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: center;
 }
 
 .slider-home {
@@ -25,37 +27,36 @@
   flex:50;
   margin-left: 20px;
   width: 200px;
-  img {
-    width: 100%;
-  }
-  @media (max-width: 400px) {
-    width:100px;
-    img{
+  // @media (max-width: 400px) {
+  //   width:100px;
+  // }
 
+  h1 {
+    color: #264653;
+    width: fit-content;
+  // padding-bottom: 22px;
+  // position:relative;
+    // ::after {
+    //     content:"";
+    //     width: 10px;
+    //     background-color: red;
+    //     position:absolute;
+    //     top:1px;
+    //   }
+  }
+
+  p {
+    text-align: justify;
+    margin-right: 20px;
     }
   }
+
+
+
+.underline {
+  padding-right: .5em;
+  box-shadow: inset 0 -0.55em 0 #E9C46A;
 }
-
-// .presentation-course {
-//   display: flex;
-//   flex-flow: column;
-//   justify-content: space-around;
-//   align-content: space-around;
-//   h1{
-//     padding-bottom: 22px;
-//     position:relative;
-//     &:hover{
-//       h1::after{
-//           content:"";
-//           width: 10px;
-//           background-color: red;
-//           position:absolute;
-//           top:1px;
-//         }
-//       }
-//     }
-
-//   }
 
 
 .carte img {
