@@ -1,13 +1,31 @@
+#site-trail-chantenay {
+  background-color: #E5E5E5;
+  color: #193038;
+}
+
 .home {
   display: flex;
   flex-direction: row;
   align-content: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: stretch;
 }
 
+.slider-home {
+  flex: 50;
+}
 .slider-home img {
-  width: 50vw;
+  width: 100%;
+}
+@media (max-width: 400px) {
+  .slider-home {
+    width: 100px;
+  }
+}
+
+.presentation-course {
+  flex: 50;
+  margin-left: 20px;
 }
 
 .presentation-course {
@@ -24,6 +42,6 @@
 .carte img {
   width: 100px;
 }
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhvbWUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7OztBQUdGO0VBQ0U7OztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7OztBQUdGO0VBQ0U7OztBQUdGO0VBQ0UiLCJmaWxlIjoiaG9tZS5jc3MifQ== */
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhvbWUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJO0VBQ0E7OztBQUdKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7O0FBR0Y7RUFDRTs7QUFDQTtFQUNBOztBQUVBO0VBTEY7SUFNSTs7OztBQUlKO0VBQ0U7RUFDQTs7O0FBR0Y7RUFDRTtFQUNBO0VBQ0E7RUFDQTs7O0FBR0Y7RUFDRTs7O0FBR0Y7RUFDRSIsImZpbGUiOiJob21lLmNzcyJ9 */
 
 /*# sourceMappingURL=home.css.map */

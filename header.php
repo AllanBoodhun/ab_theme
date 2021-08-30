@@ -21,5 +21,7 @@
         <li><a href="#!">Résultats</a></li>
         <li><a href="#!">Galerie Photos</a></li>
         <li><a href="#!">Le MSC</a></li>
+        <li><a href="#!"> <?php get_template_part( './assets/images', 'menu.svg' );?> </a></li>
       </ul>
+
     </div>

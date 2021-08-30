@@ -1,6 +1,6 @@
 // Chargement des dépendances
 @import "font";
-@import "var";
+
 @import "navbar";
 @import "home";
 
@@ -30,7 +30,4 @@ h1 {
     padding: 10px 20px;
 }
 
-.btn:hover{
-    color:blue;
-    background-color: rgb(203, 203, 255);
-}
+

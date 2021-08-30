@@ -41,11 +41,11 @@ $GLOBALS['logo'] = get_field('logo');
   <div class="inscriptions">
     <h1>Inscriptions </h1>
 
-    <div class="inscris cards">
-      <div class="date">date</div>
-      <div class="dossard">dossard</div>
-      <div class="tarif">tarif</div>
-      <div class="reglement">reglement</div>
+    <div class="inscription cards">
+      <div id="card">date</div>
+      <div id="card">dossard</div>
+      <div id="card">tarif</div>
+      <div id="card">reglement</div>
     </div>
 
     <div class="inscris-btn">Je m'inscris</div>

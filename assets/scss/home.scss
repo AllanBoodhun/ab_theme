@@ -1,13 +1,29 @@
+#site-trail-chantenay{
+    background-color: #E5E5E5;
+    color: #193038;
+}
+
 .home {
   display: flex;
   flex-direction: row;
   align-content: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: stretch;
 }
 
-.slider-home img {
-  width: 50vw;
+.slider-home {
+  flex: 50;
+  img {
+  width: 100%;
+  }
+  @media (max-width: 400px) {
+    width: 100px;
+  }
+}
+
+.presentation-course {
+  flex:50;
+  margin-left: 20px;
 }
 
 .presentation-course {
@@ -24,3 +40,4 @@
 .carte img {
   width: 100px;
 }
+
