@@ -6,19 +6,39 @@
   align-items: stretch;
 }
 
-.slider-home img {
-  width: 50vw;
-}
+.slider-home {
+  width: 200px;
+  img {
+    width: 100%;
+  }
+  @media (max-width: 400px) {
+    width:100px;
+    img{
+
+    }
+  }
+} 
 
 .presentation-course {
   display: flex;
   flex-flow: column;
   justify-content: space-around;
   align-content: space-around;
-}
-
-.presentation-course h1 {
-  padding-bottom: 22px;
+  h1{
+    padding-bottom: 22px;
+    position:relative;
+    &:hover{
+      h1::after{
+          content:"";
+          width: 10px;
+          background-color: red;
+          position:absolute;
+          top:1px;
+        }
+      }
+    }
+    
+  }
 }
 
 .carte img {

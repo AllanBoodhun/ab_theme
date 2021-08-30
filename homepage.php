@@ -5,15 +5,15 @@
 <?php 
 $GLOBALS['logo'] = get_field('logo');
 
-
 ?>
+
 
 
 <?php get_header(); ?>
 <div class="wraper">
 
   <div class="homepage">
-    <div class="home">
+    <div class="banner">
       <div class="slider-home">
         <!-- idéalement un slider photos -->
         <img src="<?php the_field('img_accueil'); ?>" alt="">
@@ -22,7 +22,7 @@ $GLOBALS['logo'] = get_field('logo');
         <h1><?php the_field('titre'); ?></h1>
         <p> <?php the_field('description'); ?> </p>
       </div>
-      </div>
+    </div>
     <div class="parcours">
       <div class="checkpoints">
         <div class="checkpoint1">checkpoint 1</div>
