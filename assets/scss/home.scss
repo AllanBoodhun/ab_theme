@@ -45,7 +45,7 @@
   }
 
   h1 {
-    color: #264653;
+    color: #0B5671;
     width: fit-content;
     position:relative;
 
@@ -74,7 +74,7 @@
 
 button {
     padding: 10 20;
-    background-color: #264653;
+    background-color: #0B5671;
     outline: none;
     border: none;
     cursor: pointer;
@@ -93,6 +93,11 @@ button {
 
 .carte img {
   width:50vw;
+}
+
+.inscriptions{
+  background-color: #0B5671;
+  color: #E5E5E5;
 }
 
 .cards {

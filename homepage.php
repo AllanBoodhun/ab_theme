@@ -50,8 +50,8 @@ $GLOBALS['logo'] = get_field('logo');
     </div>
   </div>
 
-  <div class="inscriptions">
     <h1 class="underline">Inscriptions </h1>
+  <div class="inscriptions">
     <p> <?php the_field('boucle_herons'); ?> </p>
     <button>Je m'inscris</button>
   </div>
