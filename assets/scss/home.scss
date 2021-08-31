@@ -92,6 +92,14 @@ button {
 }
 
 .carte img {
-  width: 100px;
+  width:50vw;
 }
 
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}

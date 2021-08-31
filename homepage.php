@@ -25,31 +25,35 @@ $GLOBALS['logo'] = get_field('logo');
       </div>
     </div>
     <div class="parcours">
-      <div class="checkpoints">
-        <div class="checkpoint1">checkpoint 1</div>
-        <div class="checkpoint2">checkpoint 2</div>
-        <div class="checkpoint3">checkpoint 3</div>
-        <div class="checkpoint4">checkpoint 4</div>
+      <h1 class="underline">Les Parcours</h1>
+      <div class="trail-urbain course">
+        <h1><?php the_field('titre_course_trail'); ?> </h1>
+        <p> <?php the_field('trail_urbain'); ?> </p>
+        <div class="carte">
+          <img src="<?php the_field('parcours_trail'); ?>" alt="">
+        </div>
       </div>
-      <div class="carte">
-        carte parcours
-        <img src="<?php the_field('parcours'); ?>" alt="">
-
+      <div class="boucle-heron course">
+        <h1><?php the_field('titre_course_herons'); ?> </h1>
+        <p> <?php the_field('boucle_herons'); ?> </p>
+        <div class="carte">
+          <img src="<?php the_field('parcours_herons'); ?>" alt="">
+        </div>
+      </div>
+      <div class="defi course">
+        <h1><?php the_field('titre_défi'); ?> </h1>
+        <p> <?php the_field('description_defi'); ?> </p>
+        <div class="carte">
+          <img src="<?php the_field('img_accueil'); ?>" alt="">
+        </div>
       </div>
     </div>
   </div>
 
   <div class="inscriptions">
-    <h1>Inscriptions </h1>
-
-    <div class="inscription cards">
-      <div id="card">date</div>
-      <div id="card">dossard</div>
-      <div id="card">tarif</div>
-      <div id="card">reglement</div>
-    </div>
-
-    <div class="inscris-btn">Je m'inscris</div>
+    <h1 class="underline">Inscriptions </h1>
+    <p> <?php the_field('boucle_herons'); ?> </p>
+    <button>Je m'inscris</button>
   </div>
 
   <div class="infos">

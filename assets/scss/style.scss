@@ -5,16 +5,8 @@
 @import "home";
 
 h1 {
-  font-size: 22px;
-  color: #34435E;
-  text-align: right;
-}
+    color: #264653;
+    width: fit-content;
+  }
 
-.cards {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: center;
-  align-items: center;
-}
+
