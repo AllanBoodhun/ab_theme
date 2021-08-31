@@ -27,6 +27,10 @@
   flex:50;
   margin-left: 20px;
   width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   // @media (max-width: 400px) {
   //   width:100px;
   // }
@@ -48,8 +52,19 @@
   p {
     text-align: justify;
     margin-right: 20px;
-    }
   }
+
+  .btn {
+    padding: 10 20;
+    background-color: #264653;
+    color: #E5E5E5;
+    text-transform: uppercase;
+    font-weight: 400;
+    border-radius: 5px;
+    width: fit-content;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+}
 
 
 
