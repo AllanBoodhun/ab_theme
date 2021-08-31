@@ -21,7 +21,7 @@ $GLOBALS['logo'] = get_field('logo');
       <div class="presentation-course">
         <h1 class="underline"><?php the_field('titre'); ?></h1>
         <p> <?php the_field('description'); ?> </p>
-        <div class="btn">Je m'inscris</div>
+        <button>Je m'inscris</button>
       </div>
     </div>
     <div class="parcours">
