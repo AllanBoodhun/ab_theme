@@ -57,13 +57,22 @@ $GLOBALS['logo'] = get_field('logo');
   </div>
 
   <div class="infos">
-    <h1>Infos Pratiques </h1>
+    <h1 class="underline">Infos Pratiques </h1>
 
-    <div class="infos cards">
-      <div class="dossard">Dossards</div>
-      <div class="recompenses">Récompenses</div>
-      <div class="venir">Comment venir ?</div>
-      <div class="eco">Notre démarche éco responsable</div>
+    <div class="cards">
+      <div class="card">
+        <h2> <?php the_field('titre_info_1'); ?> </h2>
+        <p> <?php the_field('description_info_1'); ?> </p>
+      </div>
+      <div class="card">
+        <h2> <?php the_field('titre_info_2'); ?> </h2>
+        <p> <?php the_field('description_info_2'); ?> </p>
+      </div>
+      <div class="card">
+        <h2> <?php the_field('titre_info_3'); ?> </h2>
+        <p> <?php the_field('description_info_3'); ?> </p>
+      </div>
+
     </div>
   </div>
 
