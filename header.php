@@ -16,11 +16,11 @@
         <img src="<?php echo $GLOBALS['logo']?>" alt="">
       </div>
       <ul class="menu">
-        <li><a href="#!">Inscription</a></li>
-        <li><a href="#!">Infos Pratiques</a></li>
-        <li><a href="#!">Résultats</a></li>
-        <li><a href="#!">Galerie Photos</a></li>
-        <li><a href="#!">Le MSC</a></li>
+        <li><a href="#!" class="effect-underline">Inscription</a></li>
+        <li><a href="#!" class="effect-underline">Infos Pratiques</a></li>
+        <li><a href="#!" class="effect-underline">Résultats</a></li>
+        <li><a href="#!" class="effect-underline">Galerie Photos</a></li>
+        <li><a href="#!" class="effect-underline">Le MSC</a></li>
         <li><a href="#!"> <?php get_template_part( './assets/images', 'menu.svg' );?> </a></li>
       </ul>
 
