@@ -16,7 +16,7 @@ $GLOBALS['logo'] = get_field('logo');
     <div class="banner">
       <div class="slider-home">
         <!-- idéalement un slider photos -->
-        <img src="<?php the_field('img_accueil'); ?>" alt="">
+        <?php echo do_shortcode('[metaslider id="117"]'); ?>
       </div>
       <div class="presentation-course">
         <h1 class="underline"><?php the_field('titre'); ?></h1>
