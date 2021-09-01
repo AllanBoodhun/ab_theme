@@ -2,12 +2,9 @@
 
 
 <div class="footer">
-  <ul class="patners">
-    <li> <img src="" alt=""></li>
-    <li> <img src="" alt=""></li>
-    <li> <img src="" alt=""></li>
-    <li> <img src="" alt=""></li>
-  </ul>
+  <div class="slider-partner">
+    <!-- <?php echo do_shortcode('[metaslider id="155"]'); ?> -->
+  </div>
 
   <div class="social">
     <a href="#">Contact</a>

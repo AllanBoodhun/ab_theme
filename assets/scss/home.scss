@@ -123,6 +123,7 @@ button {
     background-color: #E9C46A;
     color: #193038;
     margin-left: 200;
+
   }
 
   @media (max-width: 500px) {
@@ -151,4 +152,31 @@ button {
   padding: 10px 20px;
   width: 25vw;
   height: 250px;
+  border-radius: 5px;
   }
+
+.card {
+  float: left;
+  perspective: 500px;
+}
+
+.content {
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .content {
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+
+.front,
+.back {
+  text-align: justify;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+
+.back {
+  transform: rotateY( 180deg );
+}
