@@ -24,28 +24,34 @@ $GLOBALS['logo'] = get_field('logo');
         <button>Je m'inscris</button>
       </div>
     </div>
-    <div class="parcours">
+    <div class="les-parcours">
       <h1 class="underline">Les Parcours</h1>
-      <div class="trail-urbain course">
-        <h1><?php the_field('titre_course_trail'); ?> </h1>
-        <p> <?php the_field('trail_urbain'); ?> </p>
+      <div class="parcours">
+        <div class="course">
+          <h1><?php the_field('titre_course_trail'); ?> </h1>
+          <p> <?php the_field('trail_urbain'); ?> </p>
+        </div>
         <div class="carte">
           <img src="<?php the_field('parcours_trail'); ?>" alt="">
         </div>
       </div>
-      <div class="boucle-heron course">
-        <h1><?php the_field('titre_course_herons'); ?> </h1>
-        <p> <?php the_field('boucle_herons'); ?> </p>
+      <div class="parcours">
+        <div class="course">
+          <h1><?php the_field('titre_course_herons'); ?> </h1>
+          <p> <?php the_field('boucle_herons'); ?> </p>
+        </div>
         <div class="carte">
           <img src="<?php the_field('parcours_herons'); ?>" alt="">
         </div>
       </div>
-      <div class="defi course">
-        <h1><?php the_field('titre_défi'); ?> </h1>
-        <p> <?php the_field('description_defi'); ?> </p>
-        <div class="carte">
-          <img src="<?php the_field('img_accueil'); ?>" alt="">
+      <div class="parcours">
+        <div class="course">
+          <h1><?php the_field('titre_défi'); ?> </h1>
+          <p> <?php the_field('description_defi'); ?> </p>
         </div>
+          <div class="carte">
+            <img src="<?php the_field('img_accueil'); ?>" alt="">
+          </div>
       </div>
     </div>
   </div>
