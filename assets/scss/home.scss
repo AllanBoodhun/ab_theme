@@ -1,26 +1,47 @@
-#site-trail-chantenay{
-  background-color: #E5E5E5;
+#site-trail-chantenay {
+  background-color: white;
   color: #193038;
   margin: 0;
-  font-family: 'asap';
+  font-family: "asap";
+
+  h2 {
+    color: #0b5671;
+    width: fit-content;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 0;
+
+    &::after {
+      content: "";
+      width: 130px;
+      height: 21px;
+      background-color: #e9c46a;
+      position: absolute;
+      top: 15px;
+      left: -9px;
+      z-index: -1;
+    }
+  }
+
+  p {
+    font-size: 14px;
+  }
 }
 
 .banner {
   display: flex;
-  flex-direction: row;
   align-content: center;
   justify-content: space-between;
   align-items: center;
 
   @media (max-width: 500px) {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
   }
 }
-
 
 .slider-home {
   flex: 50;
@@ -30,38 +51,22 @@
 }
 
 .presentation-course {
-  flex:50;
+  flex: 50;
   margin-left: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   line-height: 1.5;
-    @media (max-width: 500px) {
+  @media (max-width: 500px) {
     width: 300px;
   }
-
-  h1 {
-    color: #0B5671;
-    width: fit-content;
-    position:relative;
-
-  // &:after {
-  //   content:"";
-  //   width: 20px;
-  //   background-color: #E9C46A;
-  //   position:absolute;
-  //   top:10px;
-  //   }
-  }
-
   p {
     text-align: justify;
     margin-right: 22px;
     padding-top: 22px;
   }
 }
-
 
 // Je n'arrive pas à faire fonctionner le after dans le H1 du coup j'ai ajouté une classe underline...
 .underline {
@@ -70,29 +75,27 @@
 }
 
 button {
-    padding: 10 20;
-    background-color: #0B5671;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    color: #E5E5E5;
-    text-transform: uppercase;
-    font-weight: 400;
-    border-radius: 5px;
-    width: fit-content;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  padding: 10 20;
+  background-color: #0b5671;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #e5e5e5;
+  text-transform: uppercase;
+  font-weight: 400;
+  border-radius: 5px;
+  width: fit-content;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   &:hover {
-    background-color: #B9D7E1;
-    color: #0B5671;
+    background-color: #b9d7e1;
+    color: #0b5671;
     font-weight: bold;
   }
 }
 .les-parcours {
-  h1 {
-    text-decoration: underline;
-  }
+  margin-top: 70px;
 
-  .parcours{
+  .parcours {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -104,26 +107,34 @@ button {
   }
 }
 
-
 .carte img {
-  width:50vw;
+  width: 50vw;
 }
 
-.inscriptions{
-
+.inscriptions {
+  margin-top: 70px;
   background-color: #0B5671;
-  color: #E5E5E5;
-  padding: 60px 200px;
+  color: #e5e5e5;
+  padding: 60px;
   text-align: justify;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 
-  button {
-    background-color: #E9C46A;
-    color: #193038;
-    margin-left: 200;
+  h2 {
+    color: #fff !important;
+  }
+  .text-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 
+    .text {
+      max-width: 70%;
+    }
+
+    button {
+      background-color: #e9c46a;
+      color: #193038;
+    }
   }
 
   @media (max-width: 500px) {
@@ -153,15 +164,14 @@ button {
     height: 250px;
     border-radius: 5px;
     float: left;
-    background-color : #E9C46A;
- // perspective: 500px;
+    background-color: #e9c46a;
+    // perspective: 500px;
 
     .content {
       transition: transform 1s;
       transform-style: preserve-3d;
       position: relative;
       display: flex;
-
     }
 
     .front img {
@@ -171,24 +181,19 @@ button {
 
     .front,
     .back {
-      position:absolute;
+      position: absolute;
       text-align: justify;
       border-radius: 5px;
       backface-visibility: hidden;
     }
 
     .back {
-      transform: rotateY( 180deg );
+      transform: rotateY(180deg);
     }
   }
 
   .card:hover .content {
-      transform: rotateY( 180deg ) ;
-      transition: transform 0.5s;
-    }
+    transform: rotateY(180deg);
+    transition: transform 0.5s;
+  }
 }
-
-
-
-
-

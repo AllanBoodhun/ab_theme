@@ -2,7 +2,7 @@
  * Template Name: Homepage
  * 
  */ -->
-<?php 
+<?php
 $GLOBALS['logo'] = get_field('logo');
 
 ?>
@@ -15,21 +15,20 @@ $GLOBALS['logo'] = get_field('logo');
   <div class="homepage">
     <div class="banner">
       <div class="slider-home">
-        <!-- idéalement un slider photos -->
         <?php echo do_shortcode('[metaslider id="117"]'); ?>
       </div>
       <div class="presentation-course">
-        <h1 class="underline"><?php the_field('titre'); ?></h1>
+        <h2><?php the_field('titre'); ?></h2>
         <p> <?php the_field('description'); ?> </p>
         <button>Je m'inscris</button>
       </div>
     </div>
     <div class="les-parcours">
-      <h1 class="underline">Les Parcours</h1>
+      <h2>Les Parcours</h2>
       <div class="parcours">
         <div class="course">
-          <h1><?php the_field('titre_course_trail'); ?> </h1>
-          <p> <?php the_field('trail_urbain'); ?> </p>
+          <h3><?php the_field('titre_course_trail'); ?> </h2>
+            <p> <?php the_field('trail_urbain'); ?> </p>
         </div>
         <div class="carte">
           <img src="<?php the_field('parcours_trail'); ?>" alt="">
@@ -37,8 +36,8 @@ $GLOBALS['logo'] = get_field('logo');
       </div>
       <div class="parcours">
         <div class="course">
-          <h1><?php the_field('titre_course_herons'); ?> </h1>
-          <p> <?php the_field('boucle_herons'); ?> </p>
+          <h3><?php the_field('titre_course_herons'); ?> </h2>
+            <p> <?php the_field('boucle_herons'); ?> </p>
         </div>
         <div class="carte">
           <img src="<?php the_field('parcours_herons'); ?>" alt="">
@@ -46,59 +45,65 @@ $GLOBALS['logo'] = get_field('logo');
       </div>
       <div class="parcours">
         <div class="course">
-          <h1><?php the_field('titre_défi'); ?> </h1>
-          <p> <?php the_field('description_defi'); ?> </p>
+          <h3><?php the_field('titre_défi'); ?> </h2>
+            <p> <?php the_field('description_defi'); ?> </p>
         </div>
-          <div class="carte">
-            <img src="<?php the_field('img_accueil'); ?>" alt="">
-          </div>
+        <div class="carte">
+          <img src="<?php the_field('img_accueil'); ?>" alt="">
+        </div>
       </div>
     </div>
   </div>
 
-    <h1 class="underline">Inscriptions </h1>
   <div class="inscriptions">
-    <p> <?php the_field('boucle_herons'); ?> </p>
-    <button>Je m'inscris</button>
+
+    <h2>Inscriptions </h2>
+    <div class="text-button">
+      <div class="text">
+      <p> <?php the_field('boucle_herons'); ?> </p>
+      </div>
+     
+      <button>Je m'inscris</button>
+    </div>
   </div>
 
   <div class="infos">
-    <h1 class="underline">Infos Pratiques </h1>
+    <h2>Infos Pratiques </h2>
 
     <div class="cards">
       <div class="card">
         <div class="content">
           <div class="front">
-            <h2> <?php the_field('titre_info_1'); ?> </h2>
-            <img src="<?php the_field('logo_info_1'); ?>" alt="">
+            <h3> <?php the_field('titre_info_1'); ?> </h2>
+              <img src="<?php the_field('logo_info_1'); ?>" alt="">
           </div>
           <div class="back">
-            <h2> <?php the_field('titre_info_1'); ?> </h2>
-            <p> <?php the_field('description_info_1'); ?> </p>
+            <h3> <?php the_field('titre_info_1'); ?> </h2>
+              <p> <?php the_field('description_info_1'); ?> </p>
           </div>
         </div>
       </div>
       <div class="card">
         <div class="content">
           <div class="front">
-            <h2> <?php the_field('titre_info_2'); ?> </h2>
-            <img src="<?php the_field('logo_info_2'); ?>" alt="">
+            <h3> <?php the_field('titre_info_2'); ?> </h2>
+              <img src="<?php the_field('logo_info_2'); ?>" alt="">
           </div>
           <div class="back">
-            <h2> <?php the_field('titre_info_2'); ?> </h2>
-            <p> <?php the_field('description_info_2'); ?> </p>
+            <h3> <?php the_field('titre_info_2'); ?> </h2>
+              <p> <?php the_field('description_info_2'); ?> </p>
           </div>
         </div>
       </div>
       <div class="card">
         <div class="content">
           <div class="front">
-            <h2> <?php the_field('titre_info_3'); ?> </h2>
-            <img src="<?php the_field('logo_info_3'); ?>" alt="">
+            <h3> <?php the_field('titre_info_3'); ?> </h2>
+              <img src="<?php the_field('logo_info_3'); ?>" alt="">
           </div>
           <div class="back">
-            <h2> <?php the_field('titre_info_3'); ?> </h2>
-            <p> <?php the_field('description_info_3'); ?> </p>
+            <h3> <?php the_field('titre_info_3'); ?> </h2>
+              <p> <?php the_field('description_info_3'); ?> </p>
           </div>
         </div>
       </div>

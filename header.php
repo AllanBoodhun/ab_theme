@@ -21,7 +21,8 @@
         <li><a href="#!" class="effect-underline">Résultats</a></li>
         <li><a href="#!" class="effect-underline">Galerie Photos</a></li>
         <li><a href="#!" class="effect-underline">Le MSC</a></li>
-        <li><a href="#!"> <?php get_template_part( './assets/images', 'menu.svg' );?> </a></li>
       </ul>
+      <a href="#!" class="nav-icon">  <img src="<?php echo get_template_directory_uri().'/assets/images/menu.svg'; ?>">
+ </a>
 
     </div>

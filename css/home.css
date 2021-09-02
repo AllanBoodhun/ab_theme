@@ -1,13 +1,32 @@
 #site-trail-chantenay {
-  background-color: #E5E5E5;
+  background-color: white;
   color: #193038;
   margin: 0;
   font-family: "asap";
 }
+#site-trail-chantenay h2 {
+  color: #0b5671;
+  width: fit-content;
+  position: relative;
+  text-transform: uppercase;
+  z-index: 0;
+}
+#site-trail-chantenay h2::after {
+  content: "";
+  width: 130px;
+  height: 21px;
+  background-color: #e9c46a;
+  position: absolute;
+  top: 15px;
+  left: -9px;
+  z-index: -1;
+}
+#site-trail-chantenay p {
+  font-size: 14px;
+}
 
 .banner {
   display: flex;
-  flex-direction: row;
   align-content: center;
   justify-content: space-between;
   align-items: center;
@@ -45,11 +64,6 @@
     width: 300px;
   }
 }
-.presentation-course h1 {
-  color: #0B5671;
-  width: fit-content;
-  position: relative;
-}
 .presentation-course p {
   text-align: justify;
   margin-right: 22px;
@@ -63,11 +77,11 @@
 
 button {
   padding: 10 20;
-  background-color: #0B5671;
+  background-color: #0b5671;
   outline: none;
   border: none;
   cursor: pointer;
-  color: #E5E5E5;
+  color: #e5e5e5;
   text-transform: uppercase;
   font-weight: 400;
   border-radius: 5px;
@@ -75,13 +89,13 @@ button {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 button:hover {
-  background-color: #B9D7E1;
-  color: #0B5671;
+  background-color: #b9d7e1;
+  color: #0b5671;
   font-weight: bold;
 }
 
-.les-parcours h1 {
-  text-decoration: underline;
+.les-parcours {
+  margin-top: 70px;
 }
 .les-parcours .parcours {
   display: flex;
@@ -99,18 +113,27 @@ button:hover {
 }
 
 .inscriptions {
+  margin-top: 70px;
   background-color: #0B5671;
-  color: #E5E5E5;
-  padding: 60px 200px;
+  color: #e5e5e5;
+  padding: 60px;
   text-align: justify;
+}
+.inscriptions h2 {
+  color: #fff !important;
+}
+.inscriptions .text-button {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
-.inscriptions button {
-  background-color: #E9C46A;
+.inscriptions .text-button .text {
+  max-width: 70%;
+}
+.inscriptions .text-button button {
+  background-color: #e9c46a;
   color: #193038;
-  margin-left: 200;
 }
 @media (max-width: 500px) {
   .inscriptions {
@@ -139,7 +162,7 @@ button:hover {
   height: 250px;
   border-radius: 5px;
   float: left;
-  background-color: #E9C46A;
+  background-color: #e9c46a;
 }
 .cards .card .content {
   transition: transform 1s;
@@ -165,6 +188,6 @@ button:hover {
   transform: rotateY(180deg);
   transition: transform 0.5s;
 }
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhvbWUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBOzs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFQRjtJQVFFO0lBQ0E7SUFDQTtJQUNBO0lBQ0E7Ozs7QUFLRjtFQUNFOztBQUNBO0VBRkY7SUFHSTs7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBQ0U7RUFSSjtJQVNJOzs7QUFHRjtFQUNFO0VBQ0E7RUFDQTs7QUFXRjtFQUNFO0VBQ0E7RUFDQTs7O0FBTUo7RUFDRTtFQUNBOzs7QUFHRjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBQ0Y7RUFDRTtFQUNBO0VBQ0E7OztBQUlGO0VBQ0U7O0FBR0Y7RUFDRTtFQUNBO0VBQ0E7O0FBRUY7RUFDRTtFQUNBO0VBQ0E7OztBQUtKO0VBQ0U7OztBQUdGO0VBRUU7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7O0FBSUY7RUFqQkY7SUFrQkk7SUFDQTtJQUNBO0lBQ0E7O0VBRUE7SUFDRTs7OztBQUtOO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBR0E7RUFDRTtFQUNBO0VBQ0E7RUFDQTs7QUFJRjtFQUNFO0VBQ0E7O0FBR0Y7QUFBQTtFQUVFO0VBQ0E7RUFDQTtFQUNBOztBQUdGO0VBQ0U7O0FBSUo7RUFDSTtFQUNBIiwiZmlsZSI6ImhvbWUuY3NzIn0= */
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhvbWUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBSUo7RUFDRTs7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQU5GO0lBT0k7SUFDQTtJQUNBO0lBQ0E7SUFDQTs7OztBQUlKO0VBQ0U7O0FBQ0E7RUFGRjtJQUdJOzs7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFDQTtFQVJGO0lBU0k7OztBQUVGO0VBQ0U7RUFDQTtFQUNBOzs7QUFLSjtFQUNFO0VBQ0E7OztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFDQTtFQUNFO0VBQ0E7RUFDQTs7O0FBR0o7RUFDRTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTs7QUFFRjtFQUNFO0VBQ0E7RUFDQTs7O0FBSUo7RUFDRTs7O0FBR0Y7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBRUY7RUFDRTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQTFCRjtJQTJCSTtJQUNBO0lBQ0E7SUFDQTs7RUFFQTtJQUNFOzs7O0FBS047RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHQTtFQUNFO0VBQ0E7RUFDQTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtBQUFBO0VBRUU7RUFDQTtFQUNBO0VBQ0E7O0FBR0Y7RUFDRTs7QUFJSjtFQUNFO0VBQ0EiLCJmaWxlIjoiaG9tZS5jc3MifQ== */
 
 /*# sourceMappingURL=home.css.map */
