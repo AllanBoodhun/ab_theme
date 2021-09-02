@@ -10,6 +10,10 @@
     position: relative;
     text-transform: uppercase;
     z-index: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    width: max-content;
 
     &::after {
       content: "";
@@ -40,6 +44,9 @@
     align-content: center;
     justify-content: center;
     align-items: center;
+  }
+  h2{
+    margin-bottom: initial !important;
   }
 }
 
@@ -113,7 +120,7 @@ button {
 
 .inscriptions {
   margin-top: 70px;
-  background-color: #0B5671;
+  background-color: #0b5671;
   color: #e5e5e5;
   padding: 60px;
   text-align: justify;
@@ -147,6 +154,10 @@ button {
       margin: 60 0;
     }
   }
+}
+
+.infos {
+  margin-top: 70px;
 }
 
 .cards {
