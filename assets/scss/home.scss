@@ -144,39 +144,51 @@ button {
   align-content: center;
   flex-direction: row;
   align-items: center;
-}
 
-.card {
-  margin: 10px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  padding: 10px 20px;
-  width: 25vw;
-  height: 250px;
-  border-radius: 5px;
+  .card {
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 10px 20px;
+    width: 25vw;
+    height: 250px;
+    border-radius: 5px;
+    float: left;
+    background-color : #E9C46A;
+ // perspective: 500px;
+
+    .content {
+      transition: transform 1s;
+      transform-style: preserve-3d;
+      position: relative;
+      display: flex;
+
+    }
+
+    .front img {
+      height: 150px;
+      width: 150px;
+    }
+
+    .front,
+    .back {
+      position:absolute;
+      text-align: justify;
+      border-radius: 5px;
+      backface-visibility: hidden;
+    }
+
+    .back {
+      transform: rotateY( 180deg );
+    }
   }
 
-.card {
-  float: left;
-  perspective: 500px;
+  .card:hover .content {
+      transform: rotateY( 180deg ) ;
+      transition: transform 0.5s;
+    }
 }
 
-.content {
-  transition: transform 1s;
-  transform-style: preserve-3d;
-}
 
-.card:hover .content {
-  transform: rotateY( 180deg ) ;
-  transition: transform 0.5s;
-}
 
-.front,
-.back {
-  text-align: justify;
-  border-radius: 5px;
-  backface-visibility: hidden;
-}
 
-.back {
-  transform: rotateY( 180deg );
-}
+
