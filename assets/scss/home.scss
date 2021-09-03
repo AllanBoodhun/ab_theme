@@ -81,6 +81,7 @@
   box-shadow: inset 0 -0.7em 0 #e9c46a;
 }
 
+
 button {
   padding: 10 20;
   background-color: #0b5671;
@@ -98,6 +99,7 @@ button {
     color: #0b5671;
     font-weight: bold;
   }
+
 }
 .les-parcours {
   margin-top: 70px;
@@ -140,7 +142,8 @@ button {
 
     button {
       background-color: #e9c46a;
-      color: #193038;
+      text-decoration: none;
+      color: white;
     }
   }
 
