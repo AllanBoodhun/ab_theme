@@ -60,7 +60,7 @@ $GLOBALS['logo'] = get_field('logo');
 
 
 
-    <div class="inscriptions">
+    <div id="inscriptions" class="inscriptions">
       <h2>Inscriptions </h2>
       <div class="text-button">
         <div class="text">
@@ -70,7 +70,7 @@ $GLOBALS['logo'] = get_field('logo');
       </div>
     </div>
 
-    <div class="infos">
+    <div id="infos" class="infos">
       <h2>Infos Pratiques </h2>
 
       <div class="cards">
@@ -116,13 +116,18 @@ $GLOBALS['logo'] = get_field('logo');
       </div>
     </div>
 
-    <div class="inscriptions">
+    <div id="resultats" class="resultats">
       <h2>Résultats </h2>
       <div class="text-button">
         <div class="text">
           <p> <?php the_field('resultats'); ?> </p>
         </div>
       </div>
+    </div>
+
+    <div id="galerie">
+      <h2>Dernières photos </h2>
+      <p> <?php echo do_shortcode('[metagallery id=234]'); ?> </p>
     </div>
 
   </div>

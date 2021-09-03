@@ -16,10 +16,10 @@
         <img src="<?php echo $GLOBALS['logo']?>" alt="">
       </div>
       <ul class="menu">
-        <li><a href="https://www.timepulse.run/evenements/voir/1192/trail-urbain-nantais-nantes" class="effect-underline">Inscription</a></li>
-        <li><a href="#!" class="effect-underline">Infos Pratiques</a></li>
-        <li><a href="#!" class="effect-underline">Résultats</a></li>
-        <li><a href="#!" class="effect-underline">Galerie Photos</a></li>
+        <li><a href="#inscriptions" class="effect-underline">Inscription</a></li>
+        <li><a href="#infos" class="effect-underline">Infos Pratiques</a></li>
+        <li><a href="#resultats" class="effect-underline">Résultats</a></li>
+        <li><a href="#galerie" class="effect-underline">Galerie Photos</a></li>
       </ul>
       <a href="#!" class="nav-icon">  <img src="<?php echo get_template_directory_uri().'/assets/images/menu.svg'; ?>">
  </a>
