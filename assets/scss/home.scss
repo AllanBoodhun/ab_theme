@@ -55,6 +55,9 @@
   @media (max-width: 500px) {
     width: 300px;
   }
+  img {
+    border-radius:15px;
+  }
 }
 
 .presentation-course {
@@ -178,7 +181,7 @@ button {
     height: 250px;
     border-radius: 5px;
     float: left;
-    background-color: #e9c46a;
+    background-color: #e5e5e5;
     // perspective: 500px;
 
     .content {

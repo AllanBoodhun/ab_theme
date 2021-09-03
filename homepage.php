@@ -127,7 +127,7 @@ $GLOBALS['logo'] = get_field('logo');
 
     <div id="galerie">
       <h2>Dernières photos </h2>
-      <p> <?php echo do_shortcode('[metagallery id=234]'); ?> </p>
+      <?php the_content() ?>
     </div>
 
   </div>
