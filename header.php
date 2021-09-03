@@ -15,7 +15,7 @@
       <div class="logo">
         <img src="<?php echo $GLOBALS['logo']?>" alt="">
       </div>
-      <ul class="menu">
+      <ul class="menu responsive">
         <li><a href="#inscriptions" class="effect-underline">Inscription</a></li>
         <li><a href="#infos" class="effect-underline">Infos Pratiques</a></li>
         <li><a href="#resultats" class="effect-underline">Résultats</a></li>

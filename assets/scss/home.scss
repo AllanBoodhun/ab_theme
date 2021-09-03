@@ -38,7 +38,7 @@
   justify-content: space-between;
   align-items: center;
 
-  @media (max-width: 500px) {
+  @media (max-width: 700px) {
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -52,9 +52,6 @@
 
 .slider-home {
   flex: 50;
-  @media (max-width: 500px) {
-    width: 300px;
-  }
   img {
     border-radius:15px;
   }
@@ -78,13 +75,6 @@
   }
 }
 
-// Je n'arrive pas à faire fonctionner le after dans le H1 du coup j'ai ajouté une classe underline...
-.underline {
-  padding-right: 1.2em;
-  box-shadow: inset 0 -0.7em 0 #e9c46a;
-}
-
-
 button {
   padding: 10 20;
   background-color: #0b5671;
@@ -102,8 +92,8 @@ button {
     color: #0b5671;
     font-weight: bold;
   }
-
 }
+
 .les-parcours {
   margin-top: 70px;
 
@@ -150,7 +140,7 @@ button {
     }
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 700px) {
     display: flex;
     flex-direction: column;
     padding: 60px 20px;
@@ -173,6 +163,11 @@ button {
   flex-direction: row;
   align-items: center;
 
+  @media (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+  }
+
   .card {
     margin: 10px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -183,7 +178,9 @@ button {
     float: left;
     background-color: #e5e5e5;
     // perspective: 500px;
-
+    @media (max-width: 700px) {
+      width: 50vw;
+    }
     .content {
       transition: transform 1s;
       transform-style: preserve-3d;
