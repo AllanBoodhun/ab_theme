@@ -1,9 +1,9 @@
 // mobile menu :
 
-var menu = document.querySelector(".menu");
-var navicon = document.querySelector(".nav-icon");
+let menu = document.querySelector(".menu");
+let navicon = document.querySelector(".nav-icon");
 
-navicon.addEventListener("click", toggleMenu);
+// navicon.addEventListener("click", toggleMenu);
 
 
 // COMPORTEMENT DES COURSES

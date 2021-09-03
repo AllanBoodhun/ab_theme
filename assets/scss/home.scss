@@ -101,17 +101,54 @@ button {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .courses{
+    width:530px;
+    margin-left:auto;
+    margin-right: auto;
   }
   .course {
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    .titre {
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center;
+      border-bottom: solid 2px rgb(0, 0, 0);
+      h3 {
+        // text-transform: uppercase;
+      }
+      img{
+        transition-duration: 0.5s;
+        transform: rotate(-180deg);
+      }
+      .actif{
+        transform: rotate(-90deg);
+      }
+    }
+    .description {
+      background: #5CA5BF;
+      color: white;
+      padding: 40px;
+      text-align: end;
+      margin-top: 0px;
+      font-size: 0.8rem;
+      line-height: 1.3rem;
+    }
+  }
+  .carte img {
+    width: 50vw;
+    max-width: 700px;
+  }
+  .close{
+    display:none;
   }
 }
 
-.carte img {
-  width: 50vw;
-}
 
 .inscriptions {
   margin-top: 70px;
@@ -133,7 +170,7 @@ button {
       max-width: 70%;
     }
 
-    button {
+    button { 
       background-color: #e9c46a;
       text-decoration: none;
       color: white;
