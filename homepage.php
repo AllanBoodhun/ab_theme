@@ -50,7 +50,7 @@ $GLOBALS['logo'] = get_field('logo');
           <div class="course" data-course='defi'> 
             <div class="titre">
               <a href=""><img src=" <?php echo get_template_directory_uri() . '/assets/images/chevron-left.svg' ?>" class ="chevron "  alt=""></a>
-              <h3><?php the_field('titre_defi'); ?> </h3>
+              <h3><?php the_field('titre_defi_butte'); ?> </h3>
             </div>
             <div class="description close">
               <p> <?php the_field('description_defi'); ?> </p>
