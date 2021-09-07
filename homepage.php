@@ -120,17 +120,30 @@ $GLOBALS['logo'] = get_field('logo');
             </div>
           </div>
         </div>
+
+        <div class="card">
+          <div class="content">
+            <div class="front">
+              <h3> <?php the_field('titre_info_4'); ?> </h3>
+              <img src="<?php the_field('logo_info_4'); ?>" alt="">
+            </div>
+            <div class="back">
+              <h3> <?php the_field('titre_info_4'); ?> </h3>
+              <p> <?php the_field('description_info_4'); ?> </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div id="resultats" class="resultats">
+    <!-- <div id="resultats" class="resultats">
       <h2>Résultats </h2>
       <div class="text-button">
         <div class="text">
           <p> <?php the_field('resultats'); ?> </p>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <div id="galerie">
       <h2>Dernières photos </h2>
