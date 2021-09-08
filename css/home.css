@@ -147,7 +147,7 @@ button:hover {
   max-width: 700px;
 }
 .les-parcours .close {
-  display: none !important;
+  display: none;
 }
 
 .inscriptions {
