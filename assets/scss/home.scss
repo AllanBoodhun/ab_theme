@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 #site-trail-chantenay {
   background-color: white;
   color: #193038;
@@ -144,8 +149,8 @@ button {
     width: 50vw;
     max-width: 700px;
   }
-  .close{
-    display:none;
+  .close {
+    display: none;
   }
 }
 

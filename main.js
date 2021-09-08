@@ -1,9 +1,15 @@
 // mobile menu :
 
-let menu = document.querySelector(".menu");
+let menu = document.querySelector(".responsive");
 let navicon = document.querySelector(".nav-icon");
 
-// navicon.addEventListener("click", toggleMenu);
+function toggleMenu(){
+
+  menu.classList.add("close");
+  console.log("close?");
+}
+
+navicon.addEventListener("click", toggleMenu);
 
 
 // COMPORTEMENT DES COURSES
