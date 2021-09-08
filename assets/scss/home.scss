@@ -108,6 +108,10 @@ button {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
+    @media (max-width: 700px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
   .courses{
     width:530px;
@@ -124,6 +128,7 @@ button {
       align-content: center;
       align-items: center;
       border-bottom: solid 2px rgb(0, 0, 0);
+      padding-right: 25px;
       h3 {
         // text-transform: uppercase;
       }
@@ -143,11 +148,13 @@ button {
       margin-top: 0px;
       font-size: 0.8rem;
       line-height: 1.3rem;
+      padding-right: 25px;
     }
   }
   .carte img {
     width: 50vw;
     max-width: 700px;
+
   }
   .close {
     display: none;
@@ -200,6 +207,7 @@ button {
 
 .cards {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-content: center;
   flex-direction: row;
@@ -211,7 +219,7 @@ button {
   }
 
   .card {
-    margin: 10px;
+    margin: 20px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     padding: 10px 20px;
     width: 300px;
@@ -220,9 +228,9 @@ button {
     float: left;
     background-color: #e5e5e5;
     // perspective: 500px;
-    @media (max-width: 700px) {
-      width: 50vw;
-    }
+    // @media (max-width: 700px) {
+    //   width: 50vw;
+    // }
     .content {
       transition: transform 1s;
       transform-style: preserve-3d;
@@ -233,7 +241,7 @@ button {
     .front img {
       height: 150px;
       width: 150px;
-
+      padding-left: 70px;
     }
 
     .front,
@@ -251,6 +259,6 @@ button {
 
   .card:hover .content {
     transform: rotateY(180deg);
-    transition: transform 0.5s;
+    transition: transform 0.8s;
   }
 }
