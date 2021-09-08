@@ -136,6 +136,7 @@ $GLOBALS['logo'] = get_field('logo');
       </div>
     </div>
 
+    <!-- CETTE DIV PART DANS UNE DES "CARD" CI DESSUS -->
     <!-- <div id="resultats" class="resultats">
       <h2>Résultats </h2>
       <div class="text-button">
