@@ -1,15 +1,13 @@
-// mobile menu :
+// DISPLAY MOBILE MENU :
 
 let menu = document.querySelector(".responsive");
 let navicon = document.querySelector(".nav-icon");
 
-function toggleMenu(){
-
-  menu.classList.add("close");
-  console.log("close?");
+function displayMenu(){
+  menu.classList.toggle("close");
 }
 
-navicon.addEventListener("click", toggleMenu);
+navicon.addEventListener("click", displayMenu);
 
 
 // COMPORTEMENT DES COURSES
