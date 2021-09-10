@@ -73,7 +73,7 @@ $GLOBALS['logo'] = get_field('logo');
         <div class="text">
           <p> <?php the_field('inscriptions'); ?> </p>
         </div>
-        <button> <a href="https://www.timepulse.run/evenements/voir/1192/trail-urbain-nantais-nantes">Je m'inscris</a></button>
+        <button> <a class="je-m-inscris" href="https://www.timepulse.run/evenements/voir/1192/trail-urbain-nantais-nantes">Je m'inscris</a></button>
       </div>
     </div>
 
@@ -121,7 +121,7 @@ $GLOBALS['logo'] = get_field('logo');
           </div>
         </div>
 
-        <div class="card">
+        <div class="card" id="resultats">
           <div class="content">
             <div class="front">
               <h3> <?php the_field('titre_info_4'); ?> </h3>

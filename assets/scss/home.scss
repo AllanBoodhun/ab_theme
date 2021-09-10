@@ -92,8 +92,13 @@ button {
   border-radius: 5px;
   width: fit-content;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  a {
+      text-decoration: none !important;
+      color: white !important;
+      }
+
   &:hover {
-    background-color: #b9d7e1;
+    background-color: #e9c46a;
     color: #0b5671;
     font-weight: bold;
   }
@@ -154,6 +159,11 @@ button {
   .carte img {
     width: 50vw;
     max-width: 700px;
+    @media (max-width: 700px) {
+      width: 98vw;
+      max-width: 700px;
+      margin: 5px;
+    }
 
   }
   .close {
@@ -168,6 +178,9 @@ button {
   color: #e5e5e5;
   padding: 60px;
   text-align: justify;
+  button {
+      background-color: #e9c46a;
+  }
 
   h2 {
     color: #fff !important;
@@ -177,16 +190,13 @@ button {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
     .text {
       max-width: 70%;
     }
-
-    button { 
-      background-color: #e9c46a;
-      text-decoration: none;
-      color: white;
-    }
+    a {
+      text-decoration: none !important;
+      color: white !important;
+      }
   }
 
   @media (max-width: 700px) {
