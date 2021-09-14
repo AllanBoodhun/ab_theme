@@ -9,8 +9,7 @@
   justify-content: space-between;
   align-items: center;
   max-width: 1300px;
-  height: 90px;
-  margin-bottom: 25px;
+  height: 70px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
   .logo img {
@@ -27,7 +26,7 @@
     flex-direction: column;
     list-style: none;
     position: absolute;
-    right: 0px;
+    right: -400px;
     top: 74px;
     z-index: 1;
     background: white;
@@ -36,7 +35,12 @@
     align-items: end;
     line-height: 4rem;
     justify-content: center;
+    transition-duration: 0.5s;
   }
+}
+
+.active{
+  right: 0 !important;
 }
 
 .menu li {
@@ -88,6 +92,7 @@
   display: none;
   @media (max-width: 800px) {
     display: block;
+    margin-right: 20px;
     img {
       height: 22px;
     }
@@ -97,3 +102,4 @@
 .close {
   display: none;
 }
+

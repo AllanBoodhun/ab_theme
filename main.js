@@ -4,7 +4,7 @@ let menu = document.querySelector(".responsive");
 let navicon = document.querySelector(".nav-icon");
 
 function displayMenu(){
-  menu.classList.toggle("close");
+  menu.classList.toggle("active");
 }
 
 navicon.addEventListener("click", displayMenu);
@@ -36,7 +36,7 @@ courses.forEach((course) => {
       } else {
         image.classList.add("close");
       }
-    });
+    }); 
 
     // ET SUR LES AUTRES:
     courses.forEach((course) => {

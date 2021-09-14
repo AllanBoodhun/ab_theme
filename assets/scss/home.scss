@@ -35,6 +35,9 @@ body {
   p {
     font-size: 14px;
   }
+  @media (max-width:800px) {
+    overflow-x: hidden;
+  }
 }
 
 .banner {
@@ -113,15 +116,18 @@ button {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
-    @media (max-width: 700px) {
+    @media (max-width: 800px) {
       display: flex;
-      flex-direction: column;
+      flex-direction: column-reverse;
     }
   }
   .courses{
     width:530px;
     margin-left:auto;
     margin-right: auto;
+    @media (max-width: 800px) {
+      width: 100%;
+    }
   }
   .course {
     display: flex;
@@ -196,7 +202,10 @@ button {
     a {
       text-decoration: none !important;
       color: white !important;
-      }
+    }
+    @media (max-width:800px) {
+      flex-direction: column;
+    }
   }
 
   @media (max-width: 700px) {
