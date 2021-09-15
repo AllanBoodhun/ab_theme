@@ -3,7 +3,8 @@
 let menu = document.querySelector(".responsive");
 let navicon = document.querySelector(".nav-icon");
 
-function displayMenu(){
+function displayMenu(e){
+  e.preventDefault();
   menu.classList.toggle("active");
 }
 

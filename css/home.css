@@ -62,7 +62,7 @@ body {
   flex: 50;
 }
 .slider-home img {
-  border-radius: 15px;
+  border-radius: 0px 0px 15px 0px;
 }
 
 .presentation-course {
