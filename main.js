@@ -1,3 +1,19 @@
+// NAVBAR ON SCROLL
+
+let navbar = document.querySelector(".navbar");
+
+function navTransform() {
+if (this.scrollY > 1) {
+  navbar.classList.add("scrolled");
+  }else {
+    navbar.classList.remove("scrolled");
+  }
+};
+
+
+window.addEventListener("scroll", navTransform);
+
+
 // DISPLAY MOBILE MENU :
 
 let menu = document.querySelector(".responsive");
