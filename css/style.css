@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Denk+One&family=Roboto:wght@300;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&display=swap");
+@import url(“https://fonts.googleapis.com/css2?family=Denk+One&family=Roboto:wght@300;500&display=swap”);
+@import url(“https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&display=swap”);
 #site-trail-chantenay {
-  font-family: "asap" Arial, sans-serif;
+  font-family: “asap” Arial, sans-serif;
 }
-
 .navbar {
   width: 100%;
   position: sticky;
   top: 0;
   z-index: 99;
+  background-color: #E5E5E5;
   flex-direction: row;
   display: flex;
   justify-content: space-between;
@@ -20,7 +20,6 @@
 .navbar .logo img {
   height: 100%;
 }
-
 .menu {
   display: flex;
   justify-content: flex-end;
@@ -44,11 +43,9 @@
     transition-duration: 0.5s;
   }
 }
-
 .active {
   right: 0 !important;
 }
-
 .menu li {
   text-align: center;
   margin-right: 20px;
@@ -65,19 +62,18 @@
   font-size: 1.1rem;
   font-weight: bold;
 }
-
 .effect-underline {
   position: relative;
   width: 100%;
 }
 .effect-underline::after {
   position: absolute;
-  content: "";
+  content: “”;
   width: 100%;
   height: 3px;
   top: 25px;
   left: 0;
-  background: #f2c746;
+  background: #F2C746;
   transition: transform 0.5s;
   transform: scaleX(0);
   transform-origin: right;
@@ -86,7 +82,6 @@
   transform: scaleX(1);
   transform-origin: left;
 }
-
 .nav-icon {
   display: none;
 }
@@ -99,24 +94,21 @@
     height: 22px;
   }
 }
-
 .close {
   display: none;
 }
-
 body {
   margin: 0;
   padding: 0;
 }
-
 #site-trail-chantenay {
   background-color: white;
   color: #193038;
   margin: 0;
-  font-family: "asap";
+  font-family: “asap”;
 }
 #site-trail-chantenay h2 {
-  color: #0b5671;
+  color: #0B5671;
   width: fit-content;
   position: relative;
   text-transform: uppercase;
@@ -127,10 +119,10 @@ body {
   width: max-content;
 }
 #site-trail-chantenay h2::after {
-  content: "";
+  content: “”;
   width: 130px;
   height: 21px;
-  background-color: #e9c46a;
+  background-color: #E9C46A;
   position: absolute;
   top: 15px;
   left: -9px;
@@ -144,7 +136,6 @@ body {
     overflow-x: hidden;
   }
 }
-
 .banner {
   display: flex;
   align-content: center;
@@ -163,14 +154,12 @@ body {
 .banner h2 {
   margin-bottom: initial !important;
 }
-
 .slider-home {
   flex: 50;
 }
 .slider-home img {
-  border-radius: 0px 0px 15px 0px;
+  border-radius: 15px;
 }
-
 .presentation-course {
   flex: 50;
   margin-left: 20px;
@@ -190,14 +179,13 @@ body {
   margin-right: 22px;
   padding-top: 22px;
 }
-
 button {
   padding: 10 20;
-  background-color: #0b5671;
+  background-color: #0B5671;
   outline: none;
   border: none;
   cursor: pointer;
-  color: #e5e5e5;
+  color: #E5E5E5;
   text-transform: uppercase;
   font-weight: 400;
   border-radius: 5px;
@@ -209,11 +197,10 @@ button a {
   color: white !important;
 }
 button:hover {
-  background-color: #e9c46a;
-  color: #0b5671;
+  background-color: #E9C46A;
+  color: #0B5671;
   font-weight: bold;
 }
-
 .les-parcours {
   margin-top: 70px;
 }
@@ -284,16 +271,15 @@ button:hover {
 .les-parcours .close {
   display: none;
 }
-
 .inscriptions {
   margin-top: 70px;
-  background-color: #0b5671;
-  color: #e5e5e5;
+  background-color: #0B5671;
+  color: #E5E5E5;
   padding: 60px;
   text-align: justify;
 }
 .inscriptions button {
-  background-color: #e9c46a;
+  background-color: #E9C46A;
 }
 .inscriptions h2 {
   color: #fff !important;
@@ -327,11 +313,9 @@ button:hover {
     margin: 60 0;
   }
 }
-
 .infos {
   margin-top: 70px;
 }
-
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -354,7 +338,7 @@ button:hover {
   height: 250px;
   border-radius: 5px;
   float: left;
-  background-color: #e5e5e5;
+  background-color: #E5E5E5;
   perspective: 500px;
 }
 .cards .card .content {
@@ -383,11 +367,7 @@ button:hover {
   transform: rotateY(180deg);
   transition: transform 0.8s;
 }
-
 h1 {
   color: #0B5671;
   width: fit-content;
 }
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZvbnQuc2NzcyIsIm5hdmJhci5zY3NzIiwiaG9tZS5zY3NzIiwic3R5bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDUTtBQUNBO0FBRVI7RUFDRTs7O0FDTEY7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7O0FBQ0E7RUFMRjtJQU1JO0lBQ0E7SUFDQTtJQUNBO0lBQ0E7SUFDQTtJQUNBO0lBQ0E7SUFDQTtJQUNBO0lBQ0E7SUFDQTtJQUNBOzs7O0FBSUo7RUFDRTs7O0FBR0Y7RUFDRTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7O0FBS047RUFDRTtFQUNBOztBQUNBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBT0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFOztBQUNBO0VBRkY7SUFHSTtJQUNBOztFQUNBO0lBQ0U7Ozs7QUFLTjtFQUNFOzs7QUNyR0Y7RUFDRTtFQUNBOzs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFJSjtFQUNFOztBQUVGO0VBaENGO0lBaUNJOzs7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQU5GO0lBT0k7SUFDQTtJQUNBO0lBQ0E7SUFDQTs7O0FBRUY7RUFDRTs7O0FBSUo7RUFDRTs7QUFDQTtFQUNFOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUNBO0VBUkY7SUFTSTs7O0FBRUY7RUFDRTtFQUNBO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFDQTtFQUNJO0VBQ0E7O0FBR0o7RUFDRTtFQUNBO0VBQ0E7OztBQUlKO0VBQ0U7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUNBO0VBTkY7SUFPSTtJQUNBOzs7QUFHSjtFQUNFO0VBQ0E7RUFDQTs7QUFDQTtFQUpGO0lBS0k7OztBQUdKO0VBQ0U7RUFDQTtFQUNBOztBQUNBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUlBO0VBQ0U7RUFDQTs7QUFFRjtFQUNFOztBQUdKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHSjtFQUNFO0VBQ0E7O0FBQ0E7RUFIRjtJQUlJO0lBQ0E7SUFDQTs7O0FBSUo7RUFDRTs7O0FBS0o7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUNBO0VBQ0k7O0FBR0o7RUFDRTs7QUFFRjtFQUNFO0VBQ0E7RUFDQTtFQUNBOztBQUNBO0VBQ0U7O0FBRUY7RUFDRTtFQUNBOztBQUVGO0VBWkY7SUFhSTs7O0FBSUo7RUE5QkY7SUErQkk7SUFDQTtJQUNBO0lBQ0E7O0VBRUE7SUFDRTs7OztBQUtOO0VBQ0U7OztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBUkY7SUFTSTtJQUNBOzs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFJQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBO0VBQ0E7O0FBR0Y7QUFBQTtFQUVFO0VBQ0E7RUFDQTtFQUNBOztBQUdGO0VBQ0U7O0FBSUo7RUFDRTtFQUNBOzs7QUNwUko7RUFDSTtFQUNBIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */
-
-/*# sourceMappingURL=style.css.map */
