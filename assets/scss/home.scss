@@ -157,7 +157,7 @@ button {
       }
     }
     .description {
-      background: #5CA5BF;
+      background-color: #5CA5BF;
       color: white;
       padding: 40px;
       text-align: end;
@@ -166,11 +166,17 @@ button {
       line-height: 1.3rem;
       padding-right: 25px;
 
+      .yelloback {
+        background-color: #e9c46a !important;
+      }
+
       @media (max-width: 800px) {
         text-align: center;
       }
     }
   }
+
+
 
   .carte img {
     width: 50vw;
@@ -185,6 +191,8 @@ button {
   .close {
     display: none;
   }
+
+
 }
 
 
@@ -206,8 +214,10 @@ button {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    max-width: 500px;
+    margin: auto;
     .text {
-      max-width: 70%;
+      margin-right: 80px;
     }
     a {
       text-decoration: none !important;
@@ -215,6 +225,9 @@ button {
     }
     @media (max-width:800px) {
       flex-direction: column;
+      .text {
+        margin: 0px 0px 60px 0px;
+      }
     }
   }
 
@@ -265,7 +278,7 @@ button {
       transform-style: preserve-3d;
       position: relative;
       display: flex;
-      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
     }
 
     .front img {
@@ -280,6 +293,7 @@ button {
       text-align: justify;
       border-radius: 5px;
       backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
     }
 
     .back {

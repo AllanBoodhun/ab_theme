@@ -69,3 +69,14 @@ courses.forEach((course) => {
 
   course.addEventListener("click", deployDescription);
 });
+
+
+// COMPORTEMENT DES CARDS D'INFO PRATIQUE
+
+// let browser = self.navigator;
+
+// function browserAsk() {
+//   console.log(browser);
+// };
+
+// window.addEventListener("click", browserAsk);
