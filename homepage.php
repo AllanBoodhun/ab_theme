@@ -170,12 +170,12 @@ $GLOBALS['logo'] = get_field('logo');
 
           <li data-year="2018">
             <h2>2018</h2>
-            <p> <?php echo do_shortcode('[envira-gallery id="263"]'); ?> </p>
+            <p> <?php echo do_shortcode('[envira-gallery id="293"]'); ?> </p>
           </li>
 
           <li data-year="2017">
             <h2>2017</h2>
-            <p> <?php echo do_shortcode('[envira-gallery id="263"]'); ?> </p>
+            <p> <?php echo do_shortcode('[envira-gallery id="303"]'); ?> </p>
           </li>
         </ol>
       </div> <!-- .years-content -->
