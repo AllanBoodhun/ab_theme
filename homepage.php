@@ -60,7 +60,7 @@ $GLOBALS['logo'] = get_field('logo');
         <div class="carte">
           <img src="<?php the_field('parcours_trail'); ?>" alt="" data-course="trail">
           <img src="<?php the_field('parcours_herons'); ?>" class="close" alt="" data-course="herons">
-          <img src="<?php the_field('img_accueil'); ?>" class="close" alt="" data-course="defi">
+          <img src="<?php the_field('photo_defi'); ?>" class="close" alt="" data-course="defi">
         </div>
       </div>
     </div>
@@ -148,11 +148,41 @@ $GLOBALS['logo'] = get_field('logo');
 
     <div id="galerie">
       <h2>Dernières photos </h2>
+      <div class="timeline">
+        <div class="years-wrapper">
+          <div class="year">
+            <ul>
+              <li><a href="#0" >2019</a></li>
+              <li><a href="#0" >2018</a></li>
+              <li><a href="#0" >2017</a></li>
+            </ul>
 
+          </div><!-- .year -->
+        </div><!-- .years-wrapper -->
+      </div> <!-- .timeline -->
+
+      <!-- <div class="years-content">
+        <ol>
+          <li class="selected" data-year="2019">
+            <h2>2019</h2>
+            <p> <?php echo do_shortcode('[envira-gallery id="263"]'); ?> </p>
+          </li>
+
+          <li data-year="2018">
+            <h2>2018</h2>
+            <p> <?php echo do_shortcode('[envira-gallery id="263"]'); ?> </p>
+          </li>
+
+          <li data-year="2017">
+            <h2>2017</h2>
+            <p> <?php echo do_shortcode('[envira-gallery id="263"]'); ?> </p>
+          </li>
+        </ol>
+      </div> <!-- .years-content -->
     </div>
 
   </div>
-</div>
+</div> -->
 
 
 <?php get_footer(); ?>
