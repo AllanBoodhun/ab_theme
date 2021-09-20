@@ -307,3 +307,38 @@ button {
 
   }
 }
+
+// "TIMELINE"
+
+.year {
+  margin: 120 30;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+
+  li a {
+      color: #5CA5BF;
+      font-weight: bold;
+      font-size: 22px;
+      text-decoration: none;
+      background-color: #e5e5e5;
+      padding: 45px;
+      -webkit-border-radius: 30px;
+      -webkit-border-top-right-radius: 55px;
+      -webkit-border-bottom-left-radius: 55px;
+      -moz-border-radius: 30px;
+      -moz-border-radius-topright: 55px;
+      -moz-border-radius-bottomleft: 55px;
+      border-radius: 30px;
+      border-top-right-radius: 55px;
+      border-bottom-left-radius: 55px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+    }
+  }
+}

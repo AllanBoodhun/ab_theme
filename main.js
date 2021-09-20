@@ -80,3 +80,7 @@ courses.forEach((course) => {
 // };
 
 // window.addEventListener("click", browserAsk);
+
+
+// TIMELINE
+
