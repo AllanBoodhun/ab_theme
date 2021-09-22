@@ -150,39 +150,34 @@ $GLOBALS['logo'] = get_field('logo');
       <h2>Dernières photos </h2>
       <div class="timeline">
         <div class="years-wrapper">
-          <div class="year">
+          <div class="years">
             <ul>
-              <li><a href="#0" >2019</a></li>
-              <li><a href="#0" >2018</a></li>
-              <li><a href="#0" >2017</a></li>
+              <li class="year">2019</li>
+              <li class="year">2018</li>
+              <li class="year">2017</li>
             </ul>
 
-          </div><!-- .year -->
+          </div><!-- .years -->
         </div><!-- .years-wrapper -->
       </div> <!-- .timeline -->
 
-      <!-- <div class="years-content">
-        <ol>
-          <li class="selected" data-year="2019">
-            <h2>2019</h2>
-            <p> <?php echo do_shortcode('[envira-gallery id="263"]'); ?> </p>
-          </li>
+      <div class="years-content">
+        <div class="year-pics close" data-year="2019">
+          <p> <?php echo do_shortcode('[envira-gallery id="263"]'); ?> </p>
+        </div>
 
-          <li data-year="2018">
-            <h2>2018</h2>
-            <p> <?php echo do_shortcode('[envira-gallery id="293"]'); ?> </p>
-          </li>
+        <div class="year-pics close" data-year="2018">
+          <p> <?php echo do_shortcode('[envira-gallery id="293"]'); ?> </p>
+        </div>
 
-          <li data-year="2017">
-            <h2>2017</h2>
-            <p> <?php echo do_shortcode('[envira-gallery id="303"]'); ?> </p>
-          </li>
-        </ol>
-      </div> <!-- .years-content -->
+        <div class="year-pics close" data-year="2017">
+          <p> <?php echo do_shortcode('[envira-gallery id="303"]'); ?> </p>
+        </div>
+      </div> <!-- .year-content -->
     </div>
 
   </div>
-</div> -->
+</div>
 
 
 <?php get_footer(); ?>

@@ -311,7 +311,7 @@ button {
 // "TIMELINE"
 #galerie {
   margin: 120px 0;
-  .year {
+  .years {
     margin: 120 30;
 
     ul {
@@ -321,8 +321,12 @@ button {
       align-items: center;
       justify-content: space-evenly;
       list-style: none;
+      @media (max-width: 700px) {
+        display: flex;
+        flex-direction: column;
+      }
 
-    li a {
+    li {
         color: #e5e5e5;
         font-size: 22px;
         text-decoration: none;
@@ -338,12 +342,22 @@ button {
         border-top-right-radius: 55px;
         border-bottom-left-radius: 55px;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        @media (max-width: 700px) {
+          margin: 12px;
       }
-    li a:hover {
+
+      }
+
+    li:hover {
         font-size: 24px;
         padding: 48px 58px;
         transition: 0.2s;
+        cursor: pointer;
       }
     }
+  }
+
+  .close {
+    display: none;
   }
 }
