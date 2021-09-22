@@ -1,0 +1,27 @@
+ .footer {
+  margin-top: 30;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-direction: row;
+  align-items: center;
+  background-color: #0B5671;
+  padding: 50px 30px 30px 30px;
+
+  .social{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+
+    i {
+      padding-left:20px;
+      color:white;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
