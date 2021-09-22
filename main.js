@@ -1,9 +1,11 @@
 // NAVBAR ON SCROLL
 
+
 let navbar = document.querySelector(".navbar");
 
+if(navbar){
 function navTransform() {
-if (this.scrollY > 1) {
+if (this.scrollY > 1 && navbar) {
   navbar.classList.add("scrolled");
   }else {
     navbar.classList.remove("scrolled");
@@ -12,7 +14,7 @@ if (this.scrollY > 1) {
 
 
 window.addEventListener("scroll", navTransform);
-
+}
 
 // DISPLAY MOBILE MENU :
 
@@ -82,17 +84,28 @@ courses.forEach((course) => {
 // window.addEventListener("click", browserAsk);
 
 
-// pseudo TIMELINE
+// GALLERIE PHOTOS
 
 
 const years = document.querySelectorAll(".year");
-let pictures = document.querySelector(".year-pics");
+
+
+function deployPictures() {
+  let images = document.querySelectorAll(".year-pics");
+
+  images.forEach((image) => {
+    if (image.dataset.year === this.innerText){
+      image.classList.remove('close');
+    } else {
+      image.classList.add('close');
+    }
+  });
+};
+
+
+
 
 years.forEach((year) => {
-  function deployPictures() {
-    console.log("yes");
-    pictures.classList.remove("close");
-  };
-year.addEventListener("click", deployPictures());
+  year.addEventListener("click", deployPictures);
 });
 
