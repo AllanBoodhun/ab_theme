@@ -175,6 +175,7 @@ $GLOBALS['logo'] = get_field('logo');
         <?php if (get_field('afficher__2021')) : ?>
           <div class="year-pics close" data-year="2021">
             <p> <?php echo do_shortcode(the_field('gallerie_2021')); ?> </p>
+            <p> <?php echo do_shortcode(the_field('gallerie_2021')); ?> </p>
           </div>
         <?php endif ?>
 
