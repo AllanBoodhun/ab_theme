@@ -3,7 +3,7 @@
 
 <div class="footer">
   <div class="slider-partner">
-    <?php echo do_shortcode('[metaslider id="155"]'); ?>
+    <?php echo do_shortcode('[metaslider id="152"]'); ?>
   </div>
 
   <div class="social">
