@@ -2,8 +2,12 @@
 
 
 <div class="footer">
-  <div class="slider-partner">
-    <?php echo do_shortcode('[metaslider id="152"]'); ?>
+  <div class="partners">
+    <img src="<?php the_field('partenaire_1'); ?>" alt="partenaire">
+    <img src="<?php the_field('partenaire_2'); ?>" alt="partenaire">
+    <img src="<?php the_field('partenaire_3'); ?>" alt="partenaire">
+    <img src="<?php the_field('partenaire_4'); ?>" alt="partenaire">
+    <img src="<?php the_field('partenaire_5'); ?>" alt="partenaire">
   </div>
 
   <div class="social">

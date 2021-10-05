@@ -9,6 +9,15 @@
   background-color: #0B5671;
   padding: 10px 30px 10px 30px;
 
+  .partners {
+    width: 400px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+  }
+
   .social{
     display: flex;
     justify-content: flex-end;
