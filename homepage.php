@@ -21,7 +21,7 @@ $GLOBALS['logo'] = get_field('logo');
       <div class="presentation-course">
         <h2><?php the_field('titre'); ?></h2>
         <p> <?php the_field('description'); ?> </p>
-        <button> <a href="https://www.timepulse.run/evenements/voir/1192/trail-urbain-nantais-nantes">Je m'inscris</a> </button>
+        <button> <?php the_field('lien_inscriptions'); ?></button>
       </div>
     </div>
 
