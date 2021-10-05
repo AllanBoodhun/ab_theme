@@ -180,14 +180,14 @@ $GLOBALS['logo'] = get_field('logo');
 
         <?php if (get_field('afficher__2019')) : ?>
           <div class="year-pics close" data-year="2019">
-            <p> <?php if ( function_exists( 'envira_gallery' ) ) { envira_gallery( '101' ); } ?> </p>
+            <p> <?php echo do_shortcode(get_field('gallerie2019')); ?> </p>
 
           </div>
         <?php endif ?>
 
         <?php if (get_field('afficher__2018')) : ?>
           <div class="year-pics close" data-year="2018">
-            <p> <?php echo do_shortcode("[envira-gallery id="101"]"); ?> </p>
+            <p> <?php echo do_shortcode(get_field('gallerie2018')); ?> </p>
           </div>
         <?php endif ?>
 
