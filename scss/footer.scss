@@ -1,5 +1,5 @@
 .footer {
-  height: 120px;
+  height: 200px;
   margin-top: 30;
   display: flex;
   justify-content: space-between;
@@ -11,15 +11,12 @@
 
   .partners {
     width: 400px;
-    height: 120px;
     display: flex;
     justify-content: flex-start;
-    flex-wrap: wrap;
-    align-content: center;
     align-items: center;
 
     .partner img {
-      max-width: 80px;
+      max-height: 80px;
     }
   }
 
