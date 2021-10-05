@@ -60,12 +60,13 @@ body {
 
 .slider-home {
   flex: 50;
+  max-width: 500px;
 
   img {
     border-radius:0px 15px 15px 0px;
   }
   @media (min-width:800px) {
-    width: 80vw;
+
     margin: auto;
     height: auto;
   }
