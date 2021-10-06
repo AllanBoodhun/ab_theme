@@ -172,28 +172,28 @@ $GLOBALS['logo'] = get_field('logo');
       </div> <!-- .timeline -->
 
       <div class="years-content">
-        <?php if (get_field('afficher__2021')) : ?>
+        <?php if (get_field('afficher_2021')) : ?>
           <div class="year-pics close" data-year="2021">
-            <p> <?php echo do_shortcode(the_field('gallerie_2021')); ?> </p>
+            <p> <?php echo do_shortcode(the_field('galerie_2021')); ?> </p>
           </div>
         <?php endif ?>
 
-        <?php if (get_field('afficher__2019')) : ?>
+        <?php if (get_field('afficher_2019')) : ?>
           <div class="year-pics close" data-year="2019">
-            <p> <?php echo do_shortcode(get_field('gallerie2019')); ?> </p>
+            <p> <?php echo do_shortcode(get_field('galerie_2019')); ?> </p>
 
           </div>
         <?php endif ?>
 
-        <?php if (get_field('afficher__2018')) : ?>
+        <?php if (get_field('afficher_2018')) : ?>
           <div class="year-pics close" data-year="2018">
-            <p> <?php echo do_shortcode(get_field('gallerie2018')); ?> </p>
+            <p> <?php echo do_shortcode(get_field('galerie_2018')); ?> </p>
           </div>
         <?php endif ?>
 
         <?php if (get_field('afficher_2017')) : ?>
           <div class="year-pics close" data-year="2017">
-            <p> <?php echo do_shortcode(get_field('gallerie2017')); ?> </p>
+            <p> <?php echo do_shortcode(get_field('galerie_2017')); ?> </p>
           </div>
         <?php endif ?>
       </div> <!-- .year-content -->
