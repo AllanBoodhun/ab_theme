@@ -11,13 +11,14 @@
 
   .partners {
     width: 400px;
-    height: inherit;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
+    max-height: 120px;
 
     .partner img {
-      max-height: 80px;
+      max-width: 100px;
     }
   }
 
