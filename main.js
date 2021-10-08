@@ -94,8 +94,11 @@ function deployPictures() {
   let images = document.querySelectorAll(".year-pics");
 
   images.forEach((image) => {
+    console.log(image.dataset.year);
+
     if (image.dataset.year === this.innerText){
       image.classList.remove('close');
+
     } else {
       image.classList.add('close');
     }

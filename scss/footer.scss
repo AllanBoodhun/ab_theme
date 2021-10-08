@@ -1,5 +1,5 @@
 .footer {
-  height: 120px;
+  height: 200px;
   margin-top: 30;
   display: flex;
   justify-content: space-between;
@@ -8,6 +8,19 @@
   align-items: center;
   background-color: #0B5671;
   padding: 10px 30px 10px 30px;
+
+  .partners {
+    width: 400px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    max-height: 120px;
+
+    .partner img {
+      max-width: 100px;
+    }
+  }
 
   .social{
     display: flex;

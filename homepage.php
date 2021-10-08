@@ -21,7 +21,7 @@ $GLOBALS['logo'] = get_field('logo');
       <div class="presentation-course">
         <h2><?php the_field('titre'); ?></h2>
         <p> <?php the_field('description'); ?> </p>
-        <button> <a href="https://www.timepulse.run/evenements/voir/1192/trail-urbain-nantais-nantes">Je m'inscris</a> </button>
+        <button> <?php the_field('lien_inscriptions'); ?></button>
       </div>
     </div>
 
@@ -74,7 +74,7 @@ $GLOBALS['logo'] = get_field('logo');
         <div class="text">
           <p> <?php the_field('inscriptions'); ?> </p>
         </div>
-        <button> <a class="je-m-inscris" href="https://www.timepulse.run/evenements/voir/1192/trail-urbain-nantais-nantes">Je m'inscris</a></button>
+        <button> <?php the_field('lien_inscriptions'); ?> </button>
       </div>
     </div>
 
@@ -172,27 +172,28 @@ $GLOBALS['logo'] = get_field('logo');
       </div> <!-- .timeline -->
 
       <div class="years-content">
-        <?php if (get_field('afficher__2021')) : ?>
+        <?php if (get_field('afficher_2021')) : ?>
           <div class="year-pics close" data-year="2021">
-            <p> <?php echo do_shortcode(the_field('gallerie_2021')); ?> </p>
+            <p> <?php echo do_shortcode(the_field('galerie_2021')); ?> </p>
           </div>
         <?php endif ?>
 
-        <?php if (get_field('afficher__2019')) : ?>
+        <?php if (get_field('afficher_2019')) : ?>
           <div class="year-pics close" data-year="2019">
-            <p> <?php echo do_shortcode(get_field('gallerie_2019')); ?> </p>
+            <p> <?php echo do_shortcode(get_field('galerie_2019')); ?> </p>
+
           </div>
         <?php endif ?>
 
-        <?php if (get_field('afficher__2018')) : ?>
+        <?php if (get_field('afficher_2018')) : ?>
           <div class="year-pics close" data-year="2018">
-            <p> <?php echo do_shortcode(get_field('gallerie_2018')); ?> </p>
+            <p> <?php echo do_shortcode(get_field('galerie_2018')); ?> </p>
           </div>
         <?php endif ?>
 
         <?php if (get_field('afficher_2017')) : ?>
           <div class="year-pics close" data-year="2017">
-            <p> <?php echo do_shortcode(get_field('gallerie2017')); ?> </p>
+            <p> <?php echo do_shortcode(get_field('galerie_2017')); ?> </p>
           </div>
         <?php endif ?>
       </div> <!-- .year-content -->

@@ -1,0 +1,29 @@
+.footer {
+  height: 120px;
+  margin-top: 30;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-direction: row;
+  align-items: center;
+  background-color: #0B5671;
+  padding: 10px 30px 10px 30px;
+}
+.footer .social {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+}
+.footer .social i {
+  padding-left: 20px;
+  color: white;
+}
+.footer .social a {
+  text-decoration: none;
+  color: white;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZvb3Rlci5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBRUY7RUFDRTtFQUNBIiwiZmlsZSI6ImZvb3Rlci5jc3MifQ== */
+
+/*# sourceMappingURL=footer.css.map */
