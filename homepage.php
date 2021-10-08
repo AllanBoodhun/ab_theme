@@ -25,10 +25,10 @@ $GLOBALS['logo'] = get_field('logo');
       </div>
     </div>
 
-    <div class="les-parcours">
+    <div class="les-parcours innerwidth">
       <h2>Les Parcours</h2>
 
-      <div class="parcours">
+      <div class="parcours ">
         <div class="courses">
           <div class="course" data-course='trail'>
             <div class="titre">
@@ -70,7 +70,7 @@ $GLOBALS['logo'] = get_field('logo');
 
     <div id="inscriptions" class="inscriptions">
       <h2>Inscriptions </h2>
-      <div class="text-button">
+      <div class="text-button innerwidth ">
         <div class="text">
           <p> <?php the_field('inscriptions'); ?> </p>
         </div>
@@ -78,7 +78,7 @@ $GLOBALS['logo'] = get_field('logo');
       </div>
     </div>
 
-    <div id="infos" class="infos">
+    <div id="infos" class="infos innerLargeWidth">
       <h2>Infos Pratiques </h2>
 
       <div class="cards">
@@ -147,7 +147,7 @@ $GLOBALS['logo'] = get_field('logo');
       </div>
     </div> -->
 
-    <div id="galerie">
+    <div id="galerie" class="innerwidth">
       <h2>Dernières photos </h2>
       <div class="timeline">
         <div class="years-wrapper">
