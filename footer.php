@@ -11,9 +11,8 @@
   </div>
 
   <div class="social">
-    <a href="#">Contact</a>
-    <i class="fab fa-instagram-square"></i>
-    <i class="fab fa-facebook-square"></i>
+    <a href="mailto:mschantenay@gmail.com">Contact</a>
+    <a href="http://www.mscnantes.org/"> <i class="fas fa-globe"> </i></a>
   </div>
 
 </div>
