@@ -1,0 +1,155 @@
+#site-main, #content {
+  padding-top: $header_height_mobile;
+  background: $blanc;
+  @media (min-width: $tablet_width) {
+    padding-top: $header_height;
+  }
+}
+/*
+ * Titres
+ * --------------------------------------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-titre;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 2.5rem;
+  line-height: 2.7rem;
+  font-weight: 800;
+  @media (max-width:$mobile_width) {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+h2 {
+  font-size: 2rem;
+  line-height: 2.1rem;
+  font-weight: 500;
+  @media (max-width:$mobile_width) {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+h3 {
+  color: #212649;
+  font-size: 1rem;
+  font-weight: 700;
+}
+h4 {
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+}
+h5,
+h6 {
+  font-size: 1.1rem;
+  line-height: 1.1rem;
+}
+
+/*
+ * Balises de contenus
+ * --------------------------------------------------------------------------*/
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/*
+ * Balises de mise en forme
+ * --------------------------------------------------------------------------*/
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: 700;
+}
+em,
+i,
+dfn {
+  font-style: italic;
+}
+img {
+  display: block;
+  border: none;
+  max-width: 100%;
+  height: auto;
+
+  pointer-events: none;
+  user-drag: none;
+  user-select: none;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: 0;
+    text-decoration: none;
+  }
+}
+
+a,
+button,
+.btn {
+  position: relative;
+  border: none;
+  background: none;
+}
+
+.centered{
+  display: block;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.title-bloc{
+  margin: 100px 0 20px 0;
+  text-align: center;
+}
+
+.text-bloc{
+  font-size: 18px;
+  max-width: 1240px;
+  margin: 15px auto;
+}
+
+/*
+ * Sélection de contenu
+ * --------------------------------------------------------------------------*/
+::selection {
+  background: $firstColor;
+  color: #fff;
+  text-shadow: none;
+}
+::-webkit-selection {
+  background: $firstColor;
+  color: #fff;
+  text-shadow: none;
+}
+::-moz-selection {
+  background: $firstColor;
+  color: #fff;
+  text-shadow: none;
+}

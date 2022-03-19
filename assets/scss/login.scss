@@ -1,0 +1,78 @@
+@import "variables/colors",
+        "variables/fonts",
+        "variables/structure",
+        "variables/transitions",
+        "mixins/global",
+        "mixins/utilities";
+
+html,
+.login {
+  background: $adminColor;
+}
+.login {
+  #login {
+    position: absolute;
+    background: rgba(#fff, 0.1);
+    border: 1px solid #fff;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 20px;
+
+    h1 {
+      a {
+        background: url("../../img/logo-16.svg") center center no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 90px;
+        margin-bottom: 15px;
+        border: 0;
+      }
+    }
+    form {
+      background: none;
+      box-shadow: none;
+      margin: 0;
+      padding: 0 0 20px;
+      border-bottom: 1px solid #fff;
+
+      label {
+        color: #fff;
+      }
+
+      &#loginform {
+        #user_login {
+        }
+        #user_pass {
+        }
+      }
+    }
+    form#loginform p.submit {
+    }
+    input[type="submit"] {
+      // @include createBtn($adminColor, #FFF, #FFF);
+      font-weight: 700;
+      text-shadow: none;
+      box-shadow: none;
+    }
+    #nav {
+      margin-top: 10px;
+      text-align: right;
+      font-style: italic;
+      padding: 0;
+    }
+    #backtoblog {
+      display: none;
+    }
+    #nav a,
+    #backtoblog a {
+      color: #fff;
+      border-bottom-color: #fff;
+    }
+  }
+  #login_error,
+  .login .message {
+    box-shadow: none;
+  }
+}
