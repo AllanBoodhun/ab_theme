@@ -1,7 +1,0 @@
-@import "variables/colors", "variables/fonts", "variables/structure",
-  "variables/transitions", "mixins/global", "templates/parts/boutons",
-  "mixins/utilities";
-
-#tinymce.wp-editor {
-  @import "layouts/basics";
-}
