@@ -11,7 +11,7 @@ $GLOBALS['logo'] = get_field('logo');
 
 <?php get_header(); ?>
 <div class="wraper">
-  <div class="homepage">
+  <div class="homepage innerWidth">
 
     <div class="banner">
       <div class="slider-home">

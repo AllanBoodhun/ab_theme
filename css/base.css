@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Commissioner", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.innerWidth {
+  max-width: 1280px;
+  margin: auto;
+}
+@media screen and (max-width: 880px) {
+  .innerWidth {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.card {
+  background-color: #fff;
+  max-width: 730px;
+  width: 100%;
+  margin: 25px auto;
+  padding: 40px;
+  border-radius: 10px;
+  border: 1px solid rgb(228, 228, 228);
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJhc2Uuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFPQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOzs7QUFJRjtFQUNFO0VBQ0E7OztBQUlGO0VBQ0UsV0F2Qlc7RUF3Qlg7O0FBQ0E7RUFIRjtJQUlJO0lBQ0E7Ozs7QUFLSjtFQUNFO0VBQ0EsV0FqQ2lCO0VBa0NqQjtFQUNBO0VBQ0E7RUFDQTtFQUNBIiwiZmlsZSI6ImJhc2UuY3NzIn0= */
+
+/*# sourceMappingURL=base.css.map */
