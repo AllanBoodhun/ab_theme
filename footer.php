@@ -14,6 +14,8 @@
     <a href="mailto:mschantenay@gmail.com">Contact</a>
     <a href="http://www.mscnantes.org/"> <i class="fas fa-globe"> </i></a>
   </div>
+<!-- INTEGRER LES LOGOS PARTENAIRES DANS LE MENU FOOTER ?? -->
+  <?php footer_menu(); ?>
 
 </div>
 
