@@ -9,3 +9,7 @@ wp_enqueue_script('abscript', get_template_directory_uri().'/main.js',
 array(),
 false,
 'all'  );
+
+	
+add_theme_support( 'custom-logo' );
+
