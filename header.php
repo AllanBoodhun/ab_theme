@@ -14,12 +14,15 @@
 
     <div class="navbar">
       <div class="container-nav innerWidth">
-      <div class="logo">
-        <?= get_custom_logo(); ?>
-      </div>
+        <div class="logo">
+          <?= get_custom_logo(); ?>
+        </div>
+        <input type="checkbox" id="nav-burger">
+        <label for="nav-burger">
+          <span class="line line__top"></span>
+          <span class="line line__mid"></span>
+          <span class="line line__bot"></span>
+        </label>
       <?php trail_menu(); ?>
-
-      <a href="#!" class="nav-icon">  <img src="<?php echo get_template_directory_uri().'/assets/images/menu.svg'; ?>">
- </a>
  </div>
     </div>

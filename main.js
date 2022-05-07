@@ -1,78 +1,52 @@
 // NAVBAR ON SCROLL
-
-
-let navbar = document.querySelector(".navbar");
-
+const navbar = document.querySelector(".navbar");
 if(navbar){
-function navTransform() {
-if (this.scrollY > 1 && navbar) {
-  navbar.classList.add("scrolled");
-  }else {
-    navbar.classList.remove("scrolled");
+  window.addEventListener("scroll", () => {
+    if (this.scrollY > 1 && navbar && window.innerWidth > 800) {
+      navbar.classList.add("scrolled");
+    }else {
+      navbar.classList.remove("scrolled");
+    }
+  });
+}
+
+// LES PARCOURS
+const parcoursCat = document.querySelector(".les-parcours");
+if(parcoursCat){
+  const radioInputs = document.querySelectorAll("input[name='course']");
+  radioInputs.forEach(input => {
+    input.addEventListener('change', displayInfo)
+  })
+
+  function displayInfo(){
+    let parcoursImage = document.querySelectorAll('img.image-parcours');
+    parcoursImage.forEach(image => {
+      if(image.dataset.course == this.value){
+        image.classList.remove('close');
+      }else {
+          image.classList.add('close');
+        }
+    })
   }
-};
-
-
-window.addEventListener("scroll", navTransform);
 }
 
-// DISPLAY MOBILE MENU :
 
-let menu = document.querySelector(".responsive");
-let navicon = document.querySelector(".nav-icon");
 
-function displayMenu(e){
-  e.preventDefault();
-  menu.classList.toggle("active");
+function isInViewport (elem, offset = 0) {
+  const bounding = elem.getBoundingClientRect();
+  return (bounding.top >= 0 && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) + offset);
 }
 
-navicon.addEventListener("click", displayMenu);
+let titles = document.querySelectorAll('h2');
 
-
+titles.forEach(title =>{
+  window.addEventListener('scroll', ()=>{
+    if( isInViewport(title)){
+      title.classList.add('show');
+    }
+  })
+})
 // COMPORTEMENT DES COURSES
-
-courses = document.querySelectorAll(".course");
-
-courses.forEach((course) => {
-  const chevron = course.querySelector(".chevron");
-
-  function deployDescription(e) {
-    e.preventDefault();
-    let titre = this.dataset.course;
-    // QUAND JE CLIQUE, IL EXECUTE SUR LA COURSE:
-    //la description
-    const description = course.querySelector(".description");
-    description.classList.remove("close");
-    //Les chevrons
-    const chevron = course.querySelector(".chevron");
-    chevron.classList.add("actif");
-
-    //les images
-    const images = document.querySelectorAll(".carte img");
-    images.forEach((image) => {
-      if (titre === image.dataset.course) {
-        image.classList.remove("close");
-      } else {
-        image.classList.add("close");
-      }
-    }); 
-
-    // ET SUR LES AUTRES:
-    courses.forEach((course) => {
-      if (course != this) {
-        let descriptionClose = course.querySelector(".description");
-        descriptionClose.classList.add("close");
-
-        let chevronclose = course.querySelector(".chevron");
-        chevronclose.classList.remove("actif");
-      }
-    });
-  }
-
-  course.addEventListener("click", deployDescription);
-});
-
-
 // COMPORTEMENT DES CARDS D'INFO PRATIQUE
 
 // let browser = self.navigator;

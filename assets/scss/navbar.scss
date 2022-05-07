@@ -8,8 +8,6 @@
   justify-content: space-between;
   align-items: center;
   height: 70px;
-  // box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-
   .logo img {
     height: 100%;
     width: 90px;
@@ -37,8 +35,9 @@
     left: 0;
     height: fit-content;
     margin:auto;
-    color:#fff;
-    font-size: 2rem;
+    color:#E9C46A;
+    font-size: 3rem;
+    text-shadow: 4px 2px 3px rgb(0 0 0 / 92%);  
   }
   .anim_scroll{
     position: absolute;
@@ -92,6 +91,63 @@
   }
 }
 
+.container-nav{
+  input[type="checkbox"]{
+    display: none;
+    & + label{
+      width: 50px;
+      height: 50px;
+      z-index: 1;
+      display: block;
+      margin-top: 14px;
+      position: relative;
+      padding: 15px;
+      background-color: #0b5671;
+      border-radius: 50px;
+      border: none;
+      box-shadow: 1px 2px 3px 1px #0000005c;
+      @media screen and (min-width:800px) {
+        display: none;
+      }
+      .line{
+        width: 30px;
+        right: 10px;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        border-radius: 11px;
+        transition-duration: 0.2s;
+        &__mid{
+          top:23px;
+        }
+        &__bot{
+          top:32px;
+        }
+      }
+    }
+  }
+  input[type="checkbox"]:checked{
+    & + label {
+      box-shadow: none;
+      .line{
+        &__top{
+          transform: rotate(45deg);
+          top: 16px;
+          width: 17px;
+        }
+        &__bot{
+          transform: rotate(-45deg);
+          top: 30px;
+          width: 17px;
+        }
+      }
+    }
+    ~ .menu{
+      transform: scaleX(1);
+      box-shadow: 1px 6px 5px 2px #00000096;
+    }
+  }
+}
 
 
 .menu {
@@ -102,18 +158,19 @@
   column-gap: 6em;
   @media (max-width: 800px) {
     flex-direction: column;
-    list-style: none;
     position: absolute;
-    right: -400px;
-    top: 74px;
-    z-index: 1;
-    background: white;
-    box-shadow: -4px 5px 9px #0000001c;
-    height: 45vh;
-    align-items: end;
-    line-height: 4rem;
-    justify-content: center;
-    transition-duration: 0.5s;
+    right: 0;
+    align-items: flex-end;
+    row-gap: 2rem;
+    background-color: #0b5671;
+    height: 100vh;
+    justify-content: flex-start;
+    padding-top: 5rem;
+    padding-left: 2rem;
+    margin-top: 0rem;
+    transform-origin: right;
+    transition-duration: 0.2s;
+    transform: scaleX(0);
   }
 }
 

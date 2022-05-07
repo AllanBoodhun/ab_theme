@@ -37,8 +37,9 @@
   left: 0;
   height: fit-content;
   margin: auto;
-  color: #fff;
-  font-size: 2rem;
+  color: #E9C46A;
+  font-size: 3rem;
+  text-shadow: 4px 2px 3px rgba(0, 0, 0, 0.92);
 }
 .main-banner .anim_scroll {
   position: absolute;
@@ -86,6 +87,60 @@
   color: white;
 }
 
+.container-nav input[type=checkbox] {
+  display: none;
+}
+.container-nav input[type=checkbox] + label {
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+  display: block;
+  margin-top: 14px;
+  position: relative;
+  padding: 15px;
+  background-color: #0b5671;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.3607843137);
+}
+@media screen and (min-width: 800px) {
+  .container-nav input[type=checkbox] + label {
+    display: none;
+  }
+}
+.container-nav input[type=checkbox] + label .line {
+  width: 30px;
+  right: 10px;
+  height: 3px;
+  background: #fff;
+  position: absolute;
+  border-radius: 11px;
+  transition-duration: 0.2s;
+}
+.container-nav input[type=checkbox] + label .line__mid {
+  top: 23px;
+}
+.container-nav input[type=checkbox] + label .line__bot {
+  top: 32px;
+}
+.container-nav input[type=checkbox]:checked + label {
+  box-shadow: none;
+}
+.container-nav input[type=checkbox]:checked + label .line__top {
+  transform: rotate(45deg);
+  top: 16px;
+  width: 17px;
+}
+.container-nav input[type=checkbox]:checked + label .line__bot {
+  transform: rotate(-45deg);
+  top: 30px;
+  width: 17px;
+}
+.container-nav input[type=checkbox]:checked ~ .menu {
+  transform: scaleX(1);
+  box-shadow: 1px 6px 5px 2px rgba(0, 0, 0, 0.5882352941);
+}
+
 .menu {
   display: flex;
   justify-content: flex-end;
@@ -96,18 +151,19 @@
 @media (max-width: 800px) {
   .menu {
     flex-direction: column;
-    list-style: none;
     position: absolute;
-    right: -400px;
-    top: 74px;
-    z-index: 1;
-    background: white;
-    box-shadow: -4px 5px 9px rgba(0, 0, 0, 0.1098039216);
-    height: 45vh;
-    align-items: end;
-    line-height: 4rem;
-    justify-content: center;
-    transition-duration: 0.5s;
+    right: 0;
+    align-items: flex-end;
+    row-gap: 2rem;
+    background-color: #0b5671;
+    height: 100vh;
+    justify-content: flex-start;
+    padding-top: 5rem;
+    padding-left: 2rem;
+    margin-top: 0rem;
+    transform-origin: right;
+    transition-duration: 0.2s;
+    transform: scaleX(0);
   }
 }
 
@@ -169,6 +225,6 @@
 .close {
   display: none;
 }
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm5hdmJhci5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUdBO0VBQ0U7RUFDQTs7QUFFRjtFQUNFO0VBQ0E7RUFDQTs7O0FBR0o7RUFDRTtFQUNBOztBQUNBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7O0FBRUY7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUY7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBQ0E7RUFDRTtFQUNBO0VBRUE7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHRjtFQUNFO0lBQ0U7SUFDQTs7RUFFRjtJQUNFO0lBQ0E7Ozs7QUFRUjtFQUNFO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOzs7QUFNSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBQ0E7RUFORjtJQU9JO0lBQ0E7SUFDQTtJQUNBO0lBQ0E7SUFDQTtJQUNBO0lBQ0E7SUFDQTtJQUNBO0lBQ0E7SUFDQTtJQUNBOzs7O0FBSUo7RUFDRTs7O0FBR0Y7RUFDRTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7O0FBS047RUFDRTtFQUNBOztBQUNBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBT0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFOztBQUNBO0VBRkY7SUFHSTtJQUNBOztFQUNBO0lBQ0U7Ozs7QUFLTjtFQUNFIiwiZmlsZSI6Im5hdmJhci5jc3MifQ== */
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm5hdmJhci5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUNBO0VBQ0U7RUFDQTs7QUFFRjtFQUNFO0VBQ0E7RUFDQTs7O0FBR0o7RUFDRTtFQUNBOztBQUNBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7O0FBRUY7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFDQTtFQUNFO0VBQ0E7RUFFQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUdGO0VBQ0U7SUFDRTtJQUNBOztFQUVGO0lBQ0U7SUFDQTs7OztBQVFSO0VBQ0U7RUFDQTtFQUNBOztBQUVBO0VBQ0U7OztBQUtGO0VBQ0U7O0FBQ0E7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUNBO0VBWkY7SUFhSTs7O0FBRUY7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFDQTtFQUNFOztBQUVGO0VBQ0U7O0FBTU47RUFDRTs7QUFFRTtFQUNFO0VBQ0E7RUFDQTs7QUFFRjtFQUNFO0VBQ0E7RUFDQTs7QUFJTjtFQUNFO0VBQ0E7OztBQU1OO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFDQTtFQU5GO0lBT0k7SUFDQTtJQUNBO0lBQ0E7SUFDQTtJQUNBO0lBQ0E7SUFDQTtJQUNBO0lBQ0E7SUFDQTtJQUNBO0lBQ0E7SUFDQTs7OztBQUlKO0VBQ0U7OztBQUdGO0VBQ0U7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7OztBQUtOO0VBQ0U7RUFDQTs7QUFDQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQU9GO0VBQ0U7RUFDQTs7O0FBSUo7RUFDRTs7QUFDQTtFQUZGO0lBR0k7SUFDQTs7RUFDQTtJQUNFOzs7O0FBS047RUFDRSIsImZpbGUiOiJuYXZiYXIuY3NzIn0= */
 
 /*# sourceMappingURL=navbar.css.map */

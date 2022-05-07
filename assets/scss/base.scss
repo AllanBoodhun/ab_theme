@@ -32,6 +32,11 @@ a{
 }
 
 
+body{
+  width: 100vw;
+  // overflow: hidden;
+}
+
 .card{
   background-color: #fff;
   max-width: $innerSmallWidth;

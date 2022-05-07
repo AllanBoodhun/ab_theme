@@ -8,7 +8,6 @@ body {
   color: #193038;
   margin: 0;
   font-family: "asap";
-
   h2 {
     color: #0b5671;
     width: fit-content; 
@@ -50,7 +49,9 @@ body {
     margin-right: auto; 
    }
 }
-
+.homepage{
+  margin-top: 5em;
+}
 .banner {
   display: flex;
   align-content: center;
@@ -100,7 +101,7 @@ body {
   }
 }
 
-button {
+.button-primary {
   padding: 10 20;
   background-color: #0b5671;
   outline: none;

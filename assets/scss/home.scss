@@ -22,13 +22,20 @@ body {
 
     &::after {
       content: "";
-      width: 130px;
+      width: 0px;
+      max-width: 130px;
+      transition-duration: 1s;
       height: 21px;
       background-color: #e9c46a;
       position: absolute;
       top: 15px;
       left: -9px;
       z-index: -1;
+    }
+    &.show{
+      &::after{
+        width: 130px;
+      }
     }
   }
 
@@ -40,12 +47,13 @@ body {
   }
 }
 
+
 .banner {
   display: flex;
   align-content: center;
   justify-content: space-between;
   align-items: center;
-  margin-top: 4em;
+  margin: 4em auto 2em auto !important;
 
   @media (max-width: 1200px) {
     display: flex;
@@ -63,14 +71,17 @@ body {
   flex: 50;
   max-width: 500px;
   margin-top : 80px;
-
-  img {
-    border-radius: 10px;
-  }
   @media (min-width:800px) {
-
     margin: auto;
     height: auto;
+  }
+  .flex-control-nav{
+    li a{
+      transition-duration:0.2s;
+    }
+    .flex-active{
+      width: 29px;
+    }
   }
 }
 
@@ -91,7 +102,7 @@ body {
   }
 }
 
-button {
+.button-primary {
   padding: 10 20;
   background-color: #0b5671;
   outline: none;
@@ -121,12 +132,13 @@ button {
   .parcours {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     margin-bottom: 20px;
     @media (max-width: 800px) {
       display: flex;
       flex-direction: column-reverse;
+      align-items: center;
     }
   }
   .courses{
@@ -137,48 +149,52 @@ button {
       width: 100%;
     }
   }
-  .course {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    .titre {
+
+  input[name="course"]{
+    display: none;
+  }
+  input[name="course"] + label{
+    .titre{
       cursor: pointer;
       display: flex;
       justify-content: space-between;
       align-content: center;
       align-items: center;
       border-bottom: solid 2px rgb(0, 0, 0);
-      padding-right: 25px;
-      img{
-        transition-duration: 0.5s;
-        transform: rotate(-180deg);
-      }
-      .actif{
-        transform: rotate(-90deg);
+      padding: 1rem 25px 1rem 0;
+      span{
+        transition-duration: 0.2s;
       }
     }
-    .description {
+    .description{
       background-color: #5CA5BF;
       color: white;
-      padding: 40px;
       text-align: end;
       margin-top: 0px;
       font-size: 0.8rem;
       line-height: 1.3rem;
       padding-right: 25px;
-
-      .yelloback {
-        background-color: #e9c46a !important;
-      }
-
-      @media (max-width: 800px) {
-        text-align: center;
-      }
+      transition-duration: 0.2s;
+      transform-origin:top;
+      transform: scaleY(0);
+      height: 0px;
+      padding: 0;
+      // display: none;
+    }
+    .yelloback {
+      background-color: #e9c46a !important;
     }
   }
-
-
-
+  input[name="course"]:checked + label{
+    .description{
+      transform: scaleY(1);
+      height: fit-content;
+      padding: 40px;
+    }
+    .titre span{
+      transform: rotate(-90deg);
+    }
+  }
   .carte img {
     width: 50vw;
     max-width: 700px;

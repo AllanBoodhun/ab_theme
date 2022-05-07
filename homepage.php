@@ -25,47 +25,49 @@ $GLOBALS['logo'] = get_field('logo');
     <div class="presentation-course">
       <h2><?php the_field('titre'); ?></h2>
       <p> <?php the_field('description'); ?> </p>
-      <button> <?php the_field('lien_inscriptions'); ?></button>
+      <button class="button-primary"> <?php the_field('lien_inscriptions'); ?></button>
     </div>
   </div>
 
   <div class="les-parcours innerwidth">
     <h2>Les Parcours</h2>
-
     <div class="parcours ">
       <div class="courses">
-        <div class="course" data-course='trail'>
+        <input type="radio" name="course" id="trail" value="trail" checked>
+        <label for="trail">
           <div class="titre">
-            <a href=""><img src=" <?php echo get_template_directory_uri() . '/assets/images/chevron-left.svg' ?>" class="chevron actif" alt=""></a>
+            <span><img src=" <?php echo get_template_directory_uri() . '/assets/images/chevron-left.svg' ?>" class="chevron actif" alt=""></span>
             <h3><?php the_field('titre_course_trail'); ?> </h3>
           </div>
           <div class="description">
             <p> <?php the_field('trail_urbain'); ?> </p>
           </div>
-        </div>
-        <div class="course" data-course='herons'>
+        </label>
+        <input type="radio" name="course" id="herons" value="herons">
+        <label for="herons">
           <div class="titre">
-            <a href=""><img src=" <?php echo get_template_directory_uri() . '/assets/images/chevron-left.svg' ?>" class="chevron " alt=""></a>
+            <span><img src=" <?php echo get_template_directory_uri() . '/assets/images/chevron-left.svg' ?>" class="chevron " alt=""></span>
             <h3><?php the_field('titre_course_herons'); ?> </h3>
           </div>
-          <div class="description close">
+          <div class="description">
             <p> <?php the_field('boucle_herons'); ?> </p>
           </div>
-        </div>
-        <div class="course" data-course='defi'>
+        </label>
+        <input type="radio" name="course" id="defi" value="defi">
+        <label for="defi">
           <div class="titre">
-            <a href=""><img src=" <?php echo get_template_directory_uri() . '/assets/images/chevron-left.svg' ?>" class="chevron " alt=""></a>
+            <span><img src=" <?php echo get_template_directory_uri() . '/assets/images/chevron-left.svg' ?>" class="chevron " alt=""></span>
             <h3><?php the_field('titre_defi_butte'); ?> </h3>
           </div>
-          <div class="description yelloback close">
+          <div class="description yelloback">
             <p> <?php the_field('description_defi'); ?> </p>
           </div>
-        </div>
+        </label>
       </div>
       <div class="carte">
-        <img src="<?php the_field('parcours_trail'); ?>" alt="" data-course="trail">
-        <img src="<?php the_field('parcours_herons'); ?>" class="close" alt="" data-course="herons">
-        <img src="<?php the_field('photo_defi'); ?>" class="close" alt="" data-course="defi">
+        <img src="<?php the_field('parcours_trail'); ?>" class ="image-parcours" data-course="trail">
+        <img src="<?php the_field('parcours_herons'); ?>" class="close image-parcours" data-course="herons">
+        <img src="<?php the_field('parcours_defi'); ?>" class="close image-parcours"  data-course="defi">
       </div>
     </div>
   </div>
@@ -78,7 +80,7 @@ $GLOBALS['logo'] = get_field('logo');
       <div class="text">
         <p> <?php the_field('inscriptions'); ?> </p>
       </div>
-      <button> <?php the_field('lien_inscriptions'); ?> </button>
+      <button class="button-primary"> <?php the_field('lien_inscriptions'); ?> </button>
     </div>
   </div>
 
