@@ -25,7 +25,9 @@ $GLOBALS['logo'] = get_field('logo');
     <div class="presentation-course">
       <h2><?php the_field('titre'); ?></h2>
       <p> <?php the_field('description'); ?> </p>
-      <button class="button-primary"> <?php the_field('lien_inscriptions'); ?></button>
+      <?php if( get_field('lien_inscriptions')):?>
+        <button class="button-primary"> <?php the_field('lien_inscriptions'); ?></button>
+      <?php endif; ?>
     </div>
   </div>
 
@@ -80,7 +82,9 @@ $GLOBALS['logo'] = get_field('logo');
       <div class="text">
         <p> <?php the_field('inscriptions'); ?> </p>
       </div>
-      <button class="button-primary"> <?php the_field('lien_inscriptions'); ?> </button>
+      <?php if(get_field('lien_inscriptions')):?>
+        <button class="button-primary"> <?php the_field('lien_inscriptions'); ?> </button>
+      <?php endif; ?>
     </div>
   </div>
 
