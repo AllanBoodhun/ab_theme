@@ -10,3 +10,4 @@ add_action('after_setup_theme', 'theme_support');
 
 include("functions/enqueues.php");
 include('functions/menu.php');
+include('functions/post-type.php');

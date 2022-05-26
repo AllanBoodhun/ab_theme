@@ -2,12 +2,6 @@
  * Template Name: Homepage
  * 
  */ -->
-<?php
-$GLOBALS['logo'] = get_field('logo');
-
-?>
-
-
 
 <?php get_header(); ?>
 <div class="main-banner">
@@ -162,6 +156,19 @@ $GLOBALS['logo'] = get_field('logo');
     <div class="timeline">
       <div class="years-wrapper">
         <div class="years">
+          <?php  
+            $args = array(
+              'post_type' => 'gallerie'
+           );
+           $query = new WP_Query( $args );
+           if ( $query->have_posts() ) :?>
+           <ul>
+           <?php  while ( $query->have_posts() ) : $query->the_post(); ?>
+<li> <a href="<?= get_field('lien',$post->ID) ?>">  <?php the_title(); ?></a> </li>
+            <?php endwhile;?>
+           </ul>
+          <?php endif; ?>
+
           <ul>
             <?php if (get_field('afficher_2017')) : ?>
               <li class="year"><?php the_field('annee_2017') ?></li>
@@ -180,34 +187,6 @@ $GLOBALS['logo'] = get_field('logo');
         </div><!-- .years -->
       </div><!-- .years-wrapper -->
     </div> <!-- .timeline -->
-
-    <div class="years-content">
-      <?php if (get_field('afficher_2021')) : ?>
-        <div class="year-pics close" data-year="2021">
-          <p> <?php echo do_shortcode(the_field('galerie_2021')); ?> </p>
-        </div>
-      <?php endif ?>
-
-      <?php if (get_field('afficher_2019')) : ?>
-        <div class="year-pics close" data-year="2019">
-          <p> <?php echo do_shortcode(get_field('galerie_2019')); ?> </p>
-
-        </div>
-      <?php endif ?>
-
-      <?php if (get_field('afficher_2018')) : ?>
-        <div class="year-pics close" data-year="2018">
-          <p> <?php echo do_shortcode(get_field('galerie_2018')); ?> </p>
-        </div>
-      <?php endif ?>
-
-      <?php if (get_field('afficher_2017')) : ?>
-        <div class="year-pics close" data-year="2017">
-          <p> <?php echo do_shortcode(get_field('galerie_2017')); ?> </p>
-        </div>
-      <?php endif ?>
-    </div> <!-- .year-content -->
-
   </div>
 </div>
 
