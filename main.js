@@ -46,43 +46,27 @@ titles.forEach(title =>{
     }
   })
 })
-// COMPORTEMENT DES COURSES
-// COMPORTEMENT DES CARDS D'INFO PRATIQUE
 
-// let browser = self.navigator;
-
-// function browserAsk() {
-//   console.log(browser);
-// };
-
-// window.addEventListener("click", browserAsk);
-
-
-// GALLERIE PHOTOS
+const allYearsInput = document.querySelectorAll('input[name="years"]');
+if(allYearsInput){
+ allYearsInput.forEach(input =>{
+   input.addEventListener('click',() => {
+    displayYearContent()
+   })
+ })
+}
 
 
-const years = document.querySelectorAll(".year");
+function displayYearContent(){
+  let inputChecked = document.querySelector('input[name="years"]:checked');
+  let yearsContent = document.querySelectorAll(`[data-year]`);
 
-
-function deployPictures() {
-  let images = document.querySelectorAll(".year-pics");
-
-  images.forEach((image) => {
-    console.log(image.dataset.year);
-
-    if (image.dataset.year === this.innerText){
-      image.classList.remove('close');
-
+  yearsContent.forEach(year => {
+    if(year.dataset.year == inputChecked.id){
+      year.classList.remove('hidden')
     } else {
-      image.classList.add('close');
+      year.classList.add('hidden')
     }
-  });
-};
+  })
 
-
-
-
-years.forEach((year) => {
-  year.addEventListener("click", deployPictures);
-});
-
+}

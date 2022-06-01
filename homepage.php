@@ -151,39 +151,39 @@
       </div>
     </div> -->
 
-  <div id="galerie" class="innerwidth">
+  <div id="galerie" class="innerLargewidth">
     <h2>Dernières photos </h2>
     <div class="timeline">
       <div class="years-wrapper">
         <div class="years">
           <?php  
             $args = array(
-              'post_type' => 'gallerie'
+              'post_type' => 'gallerie',
+              'status'    => 'publish'
            );
            $query = new WP_Query( $args );
            if ( $query->have_posts() ) :?>
-           <ul>
-           <?php  while ( $query->have_posts() ) : $query->the_post(); ?>
-<li> <a href="<?= get_field('lien',$post->ID) ?>">  <?php the_title(); ?></a> </li>
-            <?php endwhile;?>
-           </ul>
+
+           
+           <div class="container-years innerWidth">
+            <?php  while ( $query->have_posts() ) : $query->the_post(); ?>
+              <input type="radio" name="years" id="<?= $post->ID ?>">  
+              <label for="<?= $post->ID ?>"><?php the_title(); ?></label>
+            <?php endwhile;
+            wp_reset_postdata()?>
+           </div>
           <?php endif; ?>
-
-          <ul>
-            <?php if (get_field('afficher_2017')) : ?>
-              <li class="year"><?php the_field('annee_2017') ?></li>
-            <?php endif ?>
-            <?php if (get_field('afficher__2018')) : ?>
-              <li class="year"><?php the_field('annee_2018') ?></li>
-            <?php endif ?>
-            <?php if (get_field('afficher__2019')) : ?>
-              <li class="year"><?php the_field('annee_2019') ?></li>
-            <?php endif ?>
-            <?php if (get_field('afficher__2021')) : ?>
-              <li class="year"><?php the_field('annee_2021') ?></li>
-            <?php endif ?>
-          </ul>
-
+          <?php if ( $query->have_posts() ) :?>
+           <?php  while ( $query->have_posts() ) : $query->the_post(); ?>
+           <div class="year-content hidden" data-year="<?= $post->ID ?>">
+              <?php if($post->post_content): ?>
+                  <?= the_content() ?>
+              <?php endif; ?>
+              </div>
+              <?php endwhile;
+            wp_reset_postdata()?>
+         
+            <?php endif; ?>
         </div><!-- .years -->
       </div><!-- .years-wrapper -->
     </div> <!-- .timeline -->

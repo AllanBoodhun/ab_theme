@@ -30,7 +30,7 @@ function initCustomPostTypes() {
         'query_var'          => true,
         'has_archive'        => false,
         'hierarchical'       => true,
-        'show_in_rest'       => false,
+        'show_in_rest'       => true,
         'rest_base'          => false,
         'menu_position'      => null,
         'capability_type'    => 'post',

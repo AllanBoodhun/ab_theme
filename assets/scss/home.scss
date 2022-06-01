@@ -330,54 +330,23 @@ body {
 
 // "TIMELINE"
 #galerie {
-  margin: 120px 0;
-  .years {
-    margin: 120 30;
-
-    ul {
-      display: flex;
-      flex-direction: row;
-      align-content: center;
-      align-items: center;
-      justify-content: space-evenly;
-      list-style: none;
-      @media (max-width: 700px) {
-        display: flex;
-        flex-direction: column;
-      }
-
-    li {
-        color: #e5e5e5;
-        font-size: 22px;
-        text-decoration: none;
-        background-color: #5CA5BF;
-        padding: 45px 55px;
-        -webkit-border-radius: 30px;
-        -webkit-border-top-right-radius: 55px;
-        -webkit-border-bottom-left-radius: 55px;
-        -moz-border-radius: 30px;
-        -moz-border-radius-topright: 55px;
-        -moz-border-radius-bottomleft: 55px;
-        border-radius: 30px;
-        border-top-right-radius: 55px;
-        border-bottom-left-radius: 55px;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-        @media (max-width: 700px) {
-          margin: 12px;
-      }
-
-      }
-
-    li:hover {
-        font-size: 24px;
-        padding: 48px 58px;
-        transition: 0.2s;
-        cursor: pointer;
-      }
-    }
-  }
-
-  .close {
-    display: none;
-  }
+ padding: 0 20px;
+ .container-years{
+  display: flex;
+  justify-content: center;
+  column-gap: 1rem;
+  margin-bottom: 3rem;
+ }
+ input[name="years"]{
+   display: none;
+   &+label{
+    background-color: #145671;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 900;
+    cursor:pointer;
+   }
+ }
 }
